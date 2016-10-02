@@ -94,3 +94,9 @@
  border-width: 0;
  cursor: default;
 }
+
+@media only screen and (max-width: 760px) {
+  .unslider{
+  max-width: 300px;
+  }
+}

@@ -450,12 +450,23 @@ float: right;
     color: #fff;
   }
 }
-
+.robot{
+  margin-left: 150px;
+}
 @media only screen and (max-width: 760px) {
   .video{
     display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logo{
+    width: 130px;
+  }
+  .robot{
+    margin-left: 0;
   }
   #videoframe {
     display: none;
+
   }
 }
