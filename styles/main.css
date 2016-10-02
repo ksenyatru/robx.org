@@ -408,17 +408,15 @@ option:disabled{
   }
 
 }
-.menu-icon {
-  display: none;
-}
-.close{
+
+.close, .menu-button{
   display: none;
 }
 @media only screen and (max-width: 920px) {
-  .menu-icon{
-    display: block;
-    text-align: right;
-  }
+.menu-button{
+display: block;
+float: right;
+}
 .container-fluid{
   padding: 0;
   }

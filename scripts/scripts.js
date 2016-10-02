@@ -9,7 +9,6 @@ $(document).ready(function($) {
 
     });
     $(".text-menu > a").on('click', function () {
-      console.log(1);
       $(".menu-button").removeClass("open");
       $(".text-menu").hide();
     })
