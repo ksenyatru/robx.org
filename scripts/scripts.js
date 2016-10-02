@@ -8,6 +8,19 @@ $(document).ready(function($) {
       $(".accordion-content").not($(this).next()).slideUp('fast');
 
     });
-  });
+    $(".text-menu > a").on('click', function () {
+      console.log(1);
+      $(".menu-button").removeClass("open");
+      $(".text-menu").hide();
+    })
+    $(".menu-button").on('click', function () {
+      $(this).toggleClass('open');
 
-  
+      $( ".text-menu" ).toggle( "slow", function() {
+
+      });
+
+    });
+
+
+  });

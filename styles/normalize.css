@@ -266,6 +266,12 @@ textarea {
   font: inherit; /* 1 */
   margin: 0; /* 2 */
 }
+button, a, select{
+  cursor: pointer;
+}
+input:focus, select:focus, button:focus {
+    outline:none;
+}
 
 /**
  * Restore the font weight unset by the previous rule.
