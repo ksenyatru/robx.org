@@ -52,6 +52,10 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/39897755" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!— /Yandex.Metrika counter —>
+   <script>
+          var submitted=false;
+    </script>
+
 </head>
 <body>
 <header >
@@ -81,6 +85,19 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
       </div>
     </div>
 </header>
+<aside class="modal">
+<content>
+  <nav>
+      <button class="clear close-modal" type="button" onclick="$('.modal').removeClass('open')">
+        <img src="icons/close.svg"/>
+      </button>
+  </nav>
+  <h2>Спасибо!</h2>
+  <p>
+    Наш сотрудник свяжется с Вами накануне мастер-класса для подтверждения времени.
+  </p>
+</content>
+</aside>
 <section id="form">
   <div class="container-fluid">
     <div class="row">
@@ -95,8 +112,9 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
         </div>
       </div>
       <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.modal').addClass('open')}"></iframe>
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0;">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted = true;">
           <div class="ss-form-question errorbox-good mb40" role="listitem">
             <div dir="auto" class="ss-item  ss-text ss-required">
               <div class="ss-form-entry">
