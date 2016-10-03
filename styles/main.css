@@ -422,6 +422,9 @@ float: right;
   }
   .text-menu{
     display: none;
+  }
+  .text-menu.absolute{
+    display: none;
     position: absolute;
     top: 80px;
     right: 0;

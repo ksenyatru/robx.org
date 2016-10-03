@@ -10,12 +10,12 @@ $(document).ready(function($) {
     });
     $(".text-menu > a").on('click', function () {
       $(".menu-button").removeClass("open");
-      $(".text-menu").hide();
+      $(".text-menu").removeClass("absolute");
     })
     $(".menu-button").on('click', function () {
       $(this).toggleClass('open');
-
-      $( ".text-menu" ).toggle( "slow", function() {
+      $( ".text-menu").addClass('absolute');
+      $( ".text-menu.absolute" ).toggle( "slow", function() {
 
       });
 
