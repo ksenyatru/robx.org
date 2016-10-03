@@ -3,6 +3,7 @@ $(document).ready(function($) {
 
       //Expand or collapse this panel
       $(this).next().slideToggle('fast');
+      console.log($(this).data('src'));
       $("#videoframe").attr('src', $(this).data('src')); //load according video
       //Hide the other panels
       $(".accordion-content").not($(this).next()).slideUp('fast');
