@@ -10,7 +10,11 @@ $(document).ready(function($) {
     });
     $(".text-menu > a").on('click', function () {
       $(".menu-button").removeClass("open");
-      $(".text-menu").removeClass("absolute");
+       if($(".text-menu").hasClass("absolute")){
+          $(".text-menu").hide();
+          $(".text-menu").removeClass("absolute");
+       }
+
     })
     $(".menu-button").on('click', function () {
       $(this).toggleClass('open');
