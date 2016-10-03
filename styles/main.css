@@ -98,7 +98,8 @@ nav a:last-child:hover{
 }
 .cost{
   color: rgb(52,74,254);
-  font-size: 20px;
+  font-size: 21px;
+  font-weight: bold;
 }
 .lesson picture{
   margin: auto;
@@ -355,6 +356,9 @@ option:disabled{
 }
 .bottom-border{
   border-bottom: 1px solid rgb(213,213,213);
+}
+.mt0{
+  margin-top: 0px !important;
 }
 .mt20{
   margin-top: 20px !important;
