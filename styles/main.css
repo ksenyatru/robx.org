@@ -409,7 +409,7 @@ option:disabled{
     display: flex;
 }
 .modal content{
-  width: 70%;
+  width: 40%;
   height: auto;
   background: #fff;
   display: block;
@@ -418,6 +418,9 @@ option:disabled{
   position: relative;
 }
 .modal content h2{
+  text-align: center;
+}
+.modal content p{
   text-align: center;
 }
 .close-modal{
@@ -452,31 +455,40 @@ option:disabled{
   a.vk, a.vk + a{
     display: none;
   }
-
+  .modal content{
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 1030px) {
   header nav a{
     padding: 9px 10px;
   }
-
+  .modal content{
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 920px) {
   .phonetag{
     display: none;
   }
-
+  .modal content{
+    width: 70%;
+  }
 }
 
 .close, .menu-button{
   display: none;
 }
 @media only screen and (max-width: 920px) {
-.menu-button{
-display: block;
-float: right;
-}
-.container-fluid{
-  padding: 0;
+  .modal content{
+    width: 80%;
+  }
+  .menu-button{
+    display: block;
+    float: right;
+  }
+  .container-fluid{
+    padding: 0;
   }
   .text-menu{
     display: none;
@@ -506,7 +518,7 @@ float: right;
     display: none;
   }
   .close{
-  display: block;
+    display: block;
     float: right;
     color: #fff;
   }
@@ -515,6 +527,9 @@ float: right;
   margin-left: 150px;
 }
 @media only screen and (max-width: 760px) {
+  .modal content{
+    width: 90%;
+  }
   .video{
     display: block;
     width: 90%;
