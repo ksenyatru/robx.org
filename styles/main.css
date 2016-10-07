@@ -233,8 +233,8 @@ input, select{
 
 
 #nav-icon4 {
-  width: 60px;
-  height: 45px;
+  width: 20px;
+  height: 15px;
   position: relative;
   margin: 8px auto;
   -webkit-transform: rotate(0deg);
@@ -251,10 +251,11 @@ input, select{
 #nav-icon4 span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 1px;
   width: 100%;
   background: #4667FF;
   border-radius: 9px;
+  border: 1px solid #4667FF;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -276,7 +277,7 @@ input, select{
 }
 
 #nav-icon4 span:nth-child(2) {
-  top: 18px;
+  top: 7px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -284,7 +285,7 @@ input, select{
 }
 
 #nav-icon4 span:nth-child(3) {
-  top: 36px;
+  top: 14px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -310,7 +311,7 @@ input, select{
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 39px;
+  top: 13px;
   left: 8px;
 }
 
@@ -527,6 +528,45 @@ option:disabled{
   margin-left: 150px;
 }
 @media only screen and (max-width: 760px) {
+  .phonenumber{
+    font-weight: bold;
+    font-size: 16pt;
+    color: rgb(234, 67, 32);
+    text-decoration: none;
+    padding: 10px 20px;
+    vertical-align: top;
+  }
+  #about img{
+    max-width: 100px;
+  }
+  #about hr{
+    display: none;
+  }
+  #about h3{
+    font-size: 11pt;
+  }
+  .stat{
+    width: 50%;
+    font-size: 9pt;
+    display: inline-block;
+    float: left;
+  }
+  .stat .muted{
+    display: block;
+    width: 100%;
+  }
+  #form img{
+    display: inline-block;
+    width: 50%;
+    float: left;
+  }
+  #form img + hr{
+    display: none;
+  }
+  .big-number{font-size:12pt}
+  .text-menu.absolute{
+    top: 55px;
+  }
   .modal content{
     width: 90%;
   }
@@ -535,11 +575,24 @@ option:disabled{
     width: 90%;
     margin: 0 auto;
   }
+  footer, section{
+    padding-top: 45px;
+  }
+  header{
+    height: 55px;
+  }
+  h2{
+    font-size: 20pt;
+  }
+  h5{
+    margin-top: 5px;
+  }
   .logo{
-    width: 130px;
+    width: 120px;
+    height: 35px;
   }
   .robot{
-    width: 250px;
+    width: 120px;
     margin: 0 auto;
   }
   #videoframe {
