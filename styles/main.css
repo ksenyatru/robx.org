@@ -531,7 +531,7 @@ option:disabled{
 }
 @media only screen and (max-width: 760px) {
   .phonenumber{
-    display: block;
+    display: inline-block;
     font-weight: bold;
     font-size: 16pt;
     color: rgb(234, 67, 32);
