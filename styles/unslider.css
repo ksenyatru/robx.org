@@ -101,9 +101,9 @@
 
 @media only screen and (max-width: 760px) {
   .unslider-wrap{
-    left: 0 !important;
+    /*left: 0 !important;
     width: 100% !important;
-    height: auto !important;
+    height: auto !important;*/
   }
   .wrap.unslider-carousel > li{
     width: 100% !important;
@@ -114,8 +114,11 @@
    margin: auto;
    height: auto !important;
   }
- 
- 
+
+  .unslider-active{
+  margin-right: 20px;
+  margin-left: 20px;
+  }
   #photo{
     display: block;
 
