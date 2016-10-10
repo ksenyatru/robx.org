@@ -2,7 +2,7 @@ body{
   background: rgb(235,236,236);
 }
 .row{
-  max-width: 1180px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 section,footer{
@@ -127,7 +127,7 @@ nav a:last-child:hover{
 }
 .location h3{
   margin: 0;
-  font-size: 16pt;
+  font-size: 15pt;
   font-weight: 300;
 }
 #vk_groups{
