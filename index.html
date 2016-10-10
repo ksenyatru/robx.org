@@ -113,7 +113,7 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
         </div>
       </div>
       <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.modal').addClass('open')}"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.modal').addClass('open'); document.getElementById("ss-form").reset();}"></iframe>
 
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted = true;">
           <div class="ss-form-question errorbox-good mb40" role="listitem">
