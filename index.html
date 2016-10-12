@@ -359,30 +359,41 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
     <div class="row ">
       <img src="icons/location.svg" with="91" height="106" style="display: block; margin: auto;">
       <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12 mb40">Адреса классов</h2>
-      <div class="location col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <h3>Медиков пр., д.5 </h3>
-        <div><small>(Петроградский район)</small></div>
-        <div class="metro m-blue">м. Петроградская</div>
-        <div id="map0" style="height: 200px;"></div>
+
+      <div class="location col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+        <div class="h-card">
+          <h3 class="p-street-address ">Медиков пр., д.5</h3>
+          <small class="p-locality">(Петроградский район)</small>
+          <div class="p-metro m-blue">м. Петроградская</div>
+        </div>
+        <div class="h-card">
+          <h3 class="p-street-address">Заневский пр., 53 к.2</h3>
+          <small class="p-locality">(Красногвардейский район)</small>
+          <div class="p-metro m-orange">м. Новочеркасская</div>
+        </div>
+        <div class="h-card">
+          <h3 class="p-street-address">Трамвайный пр., д.20</h3>
+          <small class="p-locality">(Кировский район)</small>
+          <div class="p-metro m-red">м. Ленинский проспект</div>
+        </div>
+        <div class="h-card">
+          <h3 class="p-street-address">Выборгское шоссе, д. 156</h3>
+          <small class="p-locality">(Выборгский район)</small>
+          <div class="p-metro m-blue">м. Проспект Просвещения</div>
+        </div>
+          <div class="h-card">
+            <h3 class="p-street-address">Гражданский проспект, д. 111</h3>
+            <small class="p-locality">(Калининский район)</small>
+            <div class="p-metro m-red">м. Гражданский проспект</div>
+          </div>
+
       </div>
-      <div class="location col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <h3>Заневский пр., 53 к.2</h3>
-        <div><small>(Красногвардейский район)</small></div>
-        <div class="metro m-orange">м. Новочеркасская</div>
-        <div id="map1" style="height: 200px;"></div>
+      <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div id="map"></div>
+
       </div>
-      <div class="location col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <h3>Трамвайный пр., д.20</h3>
-        <div><small>(Кировский район)</small></div>
-        <div class="metro m-red">м. Ленинский проспект</div>
-        <div id="map2" style="height: 200px;"></div>
-      </div>
-      <div class="location col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <h3>Выборгское шоссе, д. 156</h3>
-        <div><small>(Выборгский район)</small></div>
-        <div class="metro m-blue">м. Проспект Просвещения</div>
-        <div id="map3" style="height: 200px;"></div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -430,29 +441,41 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
     // of the map controls.
 
     function initMap() {
-      var locations = [{lat: 59.9701, lng: 30.3158}, {lat: 59.928, lng: 30.4255}, {lat: 59.8547, lng: 30.2715}, {lat: 60.0607, lng: 30.304}];
+
+
+      var locations = [{lat: 59.9701, lng: 30.3158}, {lat: 59.928, lng: 30.4255}, {lat: 59.8547, lng: 30.2715}, {lat: 60.0607, lng: 30.304}, {lat: 60.030, lng: 30.415}];
        var marker0 = new google.maps.Marker({
         position: locations[0],
-        map: map0,
+        map: map,
+        icon: 'icons/location-small.svg',
         title: 'Класс на Медиков (третий этаж, налево)'
       });
       var marker1 = new google.maps.Marker({
        position: locations[1],
-       map: map1,
-       title: 'Класс на Медиков (третий этаж, налево)'
+       map: map,
+       icon: 'icons/location-small.svg',
+       title: 'Класс на Заневском (школа)'
      });
      var marker2 = new google.maps.Marker({
       position: locations[2],
-      map: map2,
-      title: 'Класс на Медиков (третий этаж, налево)'
+      map: map,
+    icon: 'icons/location-small.svg',
+      title: 'Класс на Трамвайном '
     });
     var marker3 = new google.maps.Marker({
      position: locations[3],
-     map: map3,
-     title: 'Класс на Медиков (третий этаж, налево)'
+     map: map,
+     icon: 'icons/location-small.svg',
+     title: 'Выборгское шоссе'
    });
-      var map0 = new google.maps.Map(document.getElementById('map0'), {
-        zoom: 16,
+   var marker4 = new google.maps.Marker({
+    position: locations[4],
+    map: map,
+    icon: 'icons/location-small.svg',
+    title: 'Класс на Гражданском проспекте'
+  });
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
         center: locations[0],
         mapTypeControl: true,
         mapTypeControlOptions: {
@@ -460,37 +483,13 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
           mapTypeIds: ['roadmap', 'terrain']
         }
       });
-      var map1 = new google.maps.Map(document.getElementById('map1'), {
-        zoom: 16,
-        center: locations[1],
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-          mapTypeIds: ['roadmap', 'terrain']
-        }
-      });
-      var map2 = new google.maps.Map(document.getElementById('map2'), {
-        zoom: 16,
-        center: locations[2],
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-          mapTypeIds: ['roadmap', 'terrain']
-        }
-      });
-      var map3 = new google.maps.Map(document.getElementById('map3'), {
-        zoom: 16,
-        center: locations[3],
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-          mapTypeIds: ['roadmap', 'terrain']
-        }
-      });
-      marker0.setMap(map0);
-      marker1.setMap(map1);
-      marker2.setMap(map2);
-      marker3.setMap(map3);
+
+
+      marker0.setMap(map);
+      marker1.setMap(map);
+      marker2.setMap(map);
+      marker3.setMap(map);
+      marker4.setMap(map);
     }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6lp_3Y5nPvcK-cUidrl9w7mPZoc2M6P8&callback=initMap">

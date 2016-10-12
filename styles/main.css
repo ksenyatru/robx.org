@@ -130,10 +130,19 @@ nav a:last-child:hover{
   font-size: 15pt;
   font-weight: 300;
 }
+.location .h-card{
+  margin-bottom: 20px;
+}
 #vk_groups{
 margin: 0 auto;
 }
-.metro{
+.location .p-locality{
+  display: block;
+}
+#map{
+  height: 700px;
+}
+.p-metro{
   margin-bottom: 20px;
   border-radius: 2em;
   padding: 5px 10px;
@@ -143,16 +152,16 @@ margin: 0 auto;
   font-size: 14px;
   margin-top: 10px;
 }
-.metro.m-blue{
+.p-metro.m-blue{
   border-color: rgb(15,119,193);
 }
-.metro.m-orange{
+.p-metro.m-orange{
   border-color: rgb(243,128,24);
 }
-.metro.m-red{
+.p-metro.m-red{
   border-color: rgb(229,0,28);
 }
-.metro.m-orange{
+.p-metro.m-orange{
   border-color: rgb(243,128,24);
 }
 
