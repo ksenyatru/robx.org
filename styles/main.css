@@ -157,14 +157,19 @@ margin: 0 auto;
 }
 
 .phone,.email{
-  font-size: 20pt;
+  font-size: 24px;
   text-align: center;
   color: #4F5252;
   font-weight: 300;
   border-left: 1px solid rgb(213,213,213);
+
 }
 .copyright{
+  padding-left: 20px;
   border-left: 1px solid rgb(213,213,213);
+}
+.copyright small{
+  margin-bottom: 40px;
 }
 .phonetag a{
   text-decoration: none;
@@ -576,7 +581,8 @@ option:disabled{
   .video{
     display: block;
     width: 90%;
-    margin: 0 auto;
+    height: auto;
+    margin: 20px auto 0 auto;;
   }
   footer, section{
     padding-top: 45px;
@@ -585,7 +591,17 @@ option:disabled{
     height: 55px;
   }
   h2{
-    font-size: 20pt;
+    font-size: 22px !important;
+  }
+  .accordion-content p{
+    width: 90%;
+    margin: 10px auto;
+  }
+  .subscription, .discount{
+    padding-left: 18px !important;
+  }
+  .lesson picture{
+    height: 120px;
   }
   h5{
     margin-top: 5px;
@@ -611,18 +627,44 @@ option:disabled{
     margin-right: 0px !important;
     margin-left: 22px;
   }
-  .phone img,
+  .phone{
+    width: 90%;
+    border-top: 2px solid rgb(214,214,214);
+      border-bottom: 2px solid rgb(214,214,214);
+
+  }
+  .email{
+    width: 90%;
+      border-bottom: 2px solid rgb(214,214,214);
+  }
+  .phone img{
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+  }
   .email img{
     width: 50px;
+    padding-right: 20px;
     display: inline-block;
     vertical-align: middle;
   }
   .phone img + div,
   .email img + div{
     display: inline-block;
+    font-size: 20px;
+    width: 201px;
   }
   .copyright{
     text-align: center;
+    font-size: 20px;
+  }
+  .copyright small{
+    margin-bottom: 0;
+  }
+  .copyright small{
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
 }
