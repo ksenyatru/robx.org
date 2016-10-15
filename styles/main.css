@@ -131,7 +131,11 @@ nav a:last-child:hover{
   font-weight: 300;
 }
 .location .h-card{
+  list-style: none;
   margin-bottom: 20px;
+  width: 245px;
+  display: inline-block;
+  float: left;
 }
 #vk_groups{
 margin: 0 auto;
@@ -140,7 +144,7 @@ margin: 0 auto;
   display: block;
 }
 #map{
-  height: 700px;
+  height: 400px;
 }
 .p-metro{
   margin-bottom: 20px;

@@ -360,36 +360,36 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
       <img src="icons/location.svg" with="91" height="106" style="display: block; margin: auto;">
       <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12 mb40">Адреса классов</h2>
 
-      <div class="location col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
-        <div class="h-card">
+      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+      <ul class='location'>
+        <li class="h-card">
           <h3 class="p-street-address ">Медиков пр., д.5</h3>
           <small class="p-locality">(Петроградский район)</small>
           <div class="p-metro m-blue">м. Петроградская</div>
-        </div>
-        <div class="h-card">
+        </li>
+        <li class="h-card">
           <h3 class="p-street-address">Заневский пр., 53 к.2</h3>
           <small class="p-locality">(Красногвардейский район)</small>
           <div class="p-metro m-orange">м. Новочеркасская</div>
-        </div>
-        <div class="h-card">
+        </li>
+        <li class="h-card">
           <h3 class="p-street-address">Трамвайный пр., д.20</h3>
           <small class="p-locality">(Кировский район)</small>
           <div class="p-metro m-red">м. Ленинский проспект</div>
-        </div>
-        <div class="h-card">
+        </li>
+        <li class="h-card">
           <h3 class="p-street-address">Выборгское шоссе, д. 156</h3>
           <small class="p-locality">(Выборгский район)</small>
           <div class="p-metro m-blue">м. Проспект Просвещения</div>
-        </div>
-          <div class="h-card">
-            <h3 class="p-street-address">Гражданский проспект, д. 111</h3>
+        </li>
+          <li class="h-card">
+            <h3 class="p-street-address">Гражданский пр., д. 111</h3>
             <small class="p-locality">(Калининский район)</small>
             <div class="p-metro m-red">м. Гражданский проспект</div>
-          </div>
-
+          </li>
+        </ul>
       </div>
-      <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
         <div id="map"></div>
 
       </div>
@@ -475,7 +475,7 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
     title: 'Класс на Гражданском проспекте'
   });
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
+        zoom: 10,
         center: locations[0],
         mapTypeControl: true,
         mapTypeControlOptions: {
