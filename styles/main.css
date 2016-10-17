@@ -673,6 +673,7 @@ option:disabled{
   .copyright{
     text-align: center;
     font-size: 20px;
+    margin-top: 20px;
   }
   .copyright small{
     margin-bottom: 0;
@@ -680,6 +681,9 @@ option:disabled{
   .copyright small{
     margin-bottom: 0;
     margin-top: 0;
+  }
+  #vk_groups{
+    margin-bottom: 40px;
   }
 
 }
