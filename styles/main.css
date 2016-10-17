@@ -126,6 +126,9 @@ nav a:last-child:hover{
   font-size: 18px;
   font-weight: 600;
 }
+#location h2{
+  margin-bottom: 80px;
+}
 .location h3{
   margin: 0;
   font-size: 15pt;
@@ -223,7 +226,7 @@ input[type=submit]{
   border-radius: 2em;
   border: 0px solid rgb(235,67,31);
   color: #fff;
-  font-size: 20pt;
+  font-size: 22px;
   padding: 5px 19px;
   text-align: center;
   width: auto;
@@ -545,7 +548,7 @@ option:disabled{
   }
 }
 .robot{
-  margin-left: 150px;
+  margin-left: 100px;
 }
 @media only screen and (max-width: 760px) {
   .phonenumber{
@@ -558,6 +561,9 @@ option:disabled{
     text-decoration: none;
     padding: 5px 0px 10px 20px;
     vertical-align: top;
+  }
+  #location h2{
+    margin-bottom: 40px;
   }
   #about img{
     max-width: 100px;
