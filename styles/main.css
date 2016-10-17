@@ -551,10 +551,12 @@ option:disabled{
   .phonenumber{
     display: inline-block;
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 18px;
+    width: 80px;
+    margin: 0 auto;
     color: rgb(234, 67, 32);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 20px 10px 20px;
     vertical-align: top;
   }
   #about img{
