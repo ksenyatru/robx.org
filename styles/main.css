@@ -525,8 +525,7 @@ option:disabled{
     margin: 0;
     padding: 0;
     z-index: 999;
-    background: rgba(0,0,0,0.5);
-
+    background: rgba(70, 103, 255, 0.95);
     max-width: 100%;
     flex-basis: auto;
   }
