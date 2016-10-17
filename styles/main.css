@@ -551,8 +551,8 @@ option:disabled{
   .phonenumber{
     display: inline-block;
     font-weight: bold;
-    font-size: 18px;
-    width: 80px;
+    font-size: 17px;
+    width: 100px;
     margin: 0 auto;
     color: rgb(234, 67, 32);
     text-decoration: none;
