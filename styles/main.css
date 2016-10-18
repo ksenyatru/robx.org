@@ -546,6 +546,7 @@ option:disabled{
     float: right;
     color: #fff;
   }
+
 }
 .robot{
   margin-left: 100px;
@@ -567,6 +568,7 @@ option:disabled{
   }
   #about img{
     max-width: 100px;
+    max-height: 100px;
   }
   #about hr{
     display: none;
@@ -576,13 +578,20 @@ option:disabled{
   }
   .stat{
     width: 50%;
-    font-size: 9pt;
+    font-size: 16px;
     display: inline-block;
     float: left;
+    text-align: left;
+  }
+  .stat > div{
+    margin-bottom: 20px;
   }
   .stat .muted{
     display: block;
     width: 100%;
+  }
+  .stat .big-number{
+    margin-left: 0
   }
   #form img{
     display: inline-block;
@@ -692,4 +701,9 @@ option:disabled{
     margin-bottom: 40px;
   }
 
+}
+@media only screen and (max-width: 320px) {
+  .stat{
+    font-size: 13px;
+  }
 }
