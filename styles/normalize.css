@@ -170,7 +170,8 @@ mark {
  */
 
 small {
-  font-size: 10pt;
+  font-size: 12px;
+  line-height: 1;
   color: #939291;
   font-weight: lighter;
 }

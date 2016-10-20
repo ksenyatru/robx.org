@@ -130,7 +130,7 @@ section h2{
 }
 .location h3{
   margin: 0;
-  font-size: 15pt;
+  font-size: 18px;
   font-weight: 300;
 }
 .location .h-card{
@@ -192,7 +192,7 @@ margin: 0 auto;
   color: #fff;
   top: 7px;
   position: relative;
-  left: 30px;
+  left: 20px;
   font-size: 20px;
 }
 hr{
@@ -210,10 +210,10 @@ hr{
   display: block;
   content: "●";
   font-family: monospace;
-  width: 40px;
-  height: 50px;
+  width: 36px;
+  height: 36px;
   font-size: 22px;
-  line-height: 50px;
+  line-height: 36px;
   position: absolute;
   right: 0px;
   top: 0;
@@ -248,10 +248,11 @@ input[type=submit]:hover{
 }
 input, select{
   width: 100%;
-  height: 50px;
+  height: 36px;
   border-style: none;
   padding: 0 20px;
   box-sizing: border-box;
+  font-size: 11px;
 }
 
 
@@ -341,7 +342,6 @@ input, select{
 
 select{
   width: 100%;
-  height: 50px;
   background: none;
   border-radius: 2em;
   background: url('../icons/arrow.svg') no-repeat right #fff;
@@ -384,6 +384,9 @@ option:disabled{
 }
 .mt0{
   margin-top: 0px !important;
+}
+.mb0{
+  margin-bottom: 0px !important;
 }
 .mt20{
   margin-top: 20px !important;
@@ -465,6 +468,12 @@ option:disabled{
   padding-left: 20px;
   height: 176px;
   border-left: 2px solid rgb(213,213,213);
+}
+.pricing .subscription h3,
+.pricing .discount h3{
+font-size: 18px;
+font-weight: 300;
+
 }
 .pricing .discount{
   padding-left: 20px;
@@ -549,6 +558,7 @@ option:disabled{
 }
 .robot{
   margin-left: 100px;
+  height: 280px;
 }
 @media only screen and (max-width: 760px) {
   .phonenumber{

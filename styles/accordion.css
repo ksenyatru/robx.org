@@ -1,4 +1,10 @@
-.accordion-toggle {cursor: pointer; color: rgb(52,74,254); display: block; margin-bottom: 0;}
+.accordion-toggle {
+  cursor: pointer; color: rgb(52,74,254);
+  display: block;
+  margin-bottom: 0;
+  border-top: 1px solid lightgray;
+  padding-top: 25px;
+  }
 .accordion-toggle img{
   vertical-align: bottom;
   margin-right: 10px;
@@ -6,8 +12,14 @@
 .accordion-toggle:first-child{
   margin-top: 0;
   vertical-align: middle;
+  border-top: none;
+  padding-top: 0;
 }
- .accordion-content {display: none; margin-left: 3em;}
+ .accordion-content {
+   display: none;
+   margin-left: 3em;
+
+   }
  @media only screen and (max-width: 760px) {
    .accordion-content {display: none; margin-left: 0em;}
  }

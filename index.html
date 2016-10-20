@@ -109,7 +109,7 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
         <div class="row stat" >
 
           <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7"><span class="muted">Ближайшие занятия:</span> <span class="bottom-red"><span class="big-number">22-23</span> Октября</span></div>
-          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"><span class="muted">Свободных мест:</span> <span class="big-number bottom-blue">50</span></div>
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"><span class="muted">Свободных мест:</span> <span class="bottom-blue"><span class="big-number">50</span></div>
         </div>
       </div>
       <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -239,7 +239,7 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
 <section id="projects">
   <div class="container-fluid ">
     <div class="row mb20">
-    <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12 mb40">Проекты, которые делают дети</h2>
+    <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12 ">Проекты, которые делают дети</h2>
       <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <iframe width="500" height="280" src="https://www.youtube.com/embed/8tjduZiy1-w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen id="videoframe"></iframe>
       </div>
@@ -313,19 +313,21 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
       <div class="pricing col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <img src="icons/ruble.svg" width="81" height="104" class="ib ruble">
         <div class="ib vat subscription">
-          <p class="mt0">Абонемент на 1 месяц</p>
-          <div class="cost">4 000 руб.</div>
-          <p>Абонемент на 6 месяцев</p>
+          <h3 class="mt0 mb0">Абонемент на 1 месяц</h3>
+          <div class="cost mb40">4 000 руб.</div>
+            <br />
+          <h3 class="mt0 mb0">Абонемент на 6 месяцев</h3>
           <div class="cost">20 000 руб.</div>
         </div>
       </div>
       <div class="pricing col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <img src="icons/percent.svg" width="105" height="105" class="ib percent">
           <div class="ib discount">
-            <div>Более 1 ребенка в семье</div>
+            <h3 class="mt0 mb0">Более 1 ребенка в семье</h3>
             <small>(стоимость за каждого ребенка)</small>
             <div class="cost">3 000 руб.</div>
-            <div class="mt20">Запись на мастер-классе</div>
+            <br/>
+            <h3 class="mt0 mb0">Запись на мастер-классе</h3>
             <small>(стоимость за первый месяц)</small>
             <div class="cost">3 000 руб.</div>
           </div>
@@ -387,6 +389,11 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
             <small class="p-locality">(Калининский район)</small>
             <div class="p-metro m-red">м. Гражданский проспект</div>
           </li>
+          <li class="h-card">
+            <h3 class="p-street-address">Московский пр., д. 151</h3>
+            <small class="p-locality">(Московский район)</small>
+            <div class="p-metro m-blue">м. Электросила</div>
+          </li>
         </ul>
       </div>
       <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
@@ -439,7 +446,14 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
     function initMap() {
 
 
-      var locations = [{lat: 59.9701, lng: 30.3158}, {lat: 59.928, lng: 30.4255}, {lat: 59.8547, lng: 30.2715}, {lat: 60.0607, lng: 30.304}, {lat: 60.030, lng: 30.415}];
+      var locations = [
+        {lat: 59.9701, lng: 30.3158},
+        {lat: 59.928, lng: 30.4255},
+        {lat: 59.8547, lng: 30.2715},
+        {lat: 60.0607, lng: 30.304},
+        {lat: 60.030, lng: 30.415},
+        {lat: 59.874, lng: 30.3188}
+      ];
        var marker0 = new google.maps.Marker({
         position: locations[0],
         map: map,
@@ -470,6 +484,12 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
     icon: 'icons/location-small.svg',
     title: 'Класс на Гражданском проспекте'
   });
+  var marker5 = new google.maps.Marker({
+   position: locations[5],
+   map: map,
+   icon: 'icons/location-small.svg',
+   title: 'Класс на Московском проспекте'
+ });
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
         center: locations[0],
@@ -486,6 +506,7 @@ autoplay: true, infinite: true, delay: 8000, speed : 950
       marker2.setMap(map);
       marker3.setMap(map);
       marker4.setMap(map);
+      marker5.setMap(map);
     }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6lp_3Y5nPvcK-cUidrl9w7mPZoc2M6P8&callback=initMap">
