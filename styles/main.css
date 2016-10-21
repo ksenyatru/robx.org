@@ -226,12 +226,13 @@ input[type=submit]{
   border: 0px solid rgb(235,67,31);
   color: #fff;
   font-size: 22px;
-  padding: 5px 19px;
+  padding: 2px 19px;
   text-align: center;
   width: auto;
   margin: auto;
   display: block;
   font-weight: bold;
+  height: 43px;
 }
 input[type=submit]:hover{
   background-color: rgb(235,67,31,0.5);
