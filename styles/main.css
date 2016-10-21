@@ -54,10 +54,10 @@ nav a.vk{
   color: rgb(54,74,254);
   border: 2px solid rgb(54,74,254);
   border-radius: 2em;
-  padding: 3px 4px;
+  padding: 8px 9px;
   font-weight: 700;
   margin-left: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 nav a.vk:hover{
   color: rgba(54,74,254, 0.5);
@@ -67,8 +67,8 @@ nav a:last-child{
   border: 2px solid rgb(235,67,31);
   border-radius: 2em;
   color: rgb(235,67,31);
-  font-size: 13px;
-  padding: 3px 10px;
+  font-size: 14px;
+  padding: 8px 10px;
   font-weight: 700;
   margin-left: 20px;
 }
@@ -562,7 +562,6 @@ font-weight: 300;
 }
 .robot{
   margin-left: 100px;
-  height: 280px;
 }
 @media only screen and (max-width: 760px) {
   .phonenumber{
