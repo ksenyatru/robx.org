@@ -1,521 +1,577 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="кружок робототехники, кружок робототехники для детей, курсы робототехники, робототехника для детей, курсы для детей">
-  <meta name="description" content="Кружок робототехники для детей школьного возраста в Санкт-Петербурге. Роботы , 3D принтеры, конструкторы и лазеры. Запишитесь на бесплатный мастер-класс.">
-  <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=fvTy9Ad1A9ZTXvl1rzoETbwIib6yvz0/tfGxEnvGKfpwsuhcPW4K8cmZPXvXEIJySZGmQeAp29JLTClR84xi6lkDrCOsQ/fwjwZZmz3tFkKg5qDLoPbFx95nVzjdeuFXlfGoJuZYVVmoy5yn7ou7C3478OO108yBHWufOBeUdC4-&pixel_id=1000054290';</script>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic-ext" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/normalize.css" type="text/css" >
-  <link rel="stylesheet" href="./styles/flexboxgrid.css" type="text/css" >
-  <link rel="stylesheet" href="./styles/main.css" type="text/css" >
-  <link rel="stylesheet" href="./styles/unslider.css" type="text/css" >
-  <link rel="stylesheet" href="./styles/accordion.css" type="text/css" >
-  <script src="scripts/jquery-3.1.0.min.js"></script>
-  <script src="scripts/unslider-min.js"></script>
-  <script src="scripts/scripts.js"></script>
-  <title>Робикс | ROBX — кружок робототехники для детей</title>
-  <script>
-  $(function() { $('.banner').unslider({
-autoplay: true, infinite: true, delay: 8000, speed : 950
-  }) })
-  </script>
-  <script>
-    (function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-    try {
-    w.yaCounter39897755 = new Ya.Metrika({
-    id:39897755,
-    clickmap:true,
-    trackLinks:true,
-    accurateTrackBounce:true,
-    webvisor:true
-    });
-    } catch(e) { }
-    });
-    var n = d.getElementsByTagName("script")[0],
-    s = d.createElement("script"),
-    f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = "https://mc.yandex.ru/metrika/watch.js";
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="keywords" content="кружок робототехники, кружок робототехники для детей, курсы робототехники, робототехника для детей, курсы для детей">
+		<meta name="description" content="Кружок робототехники для детей школьного возраста в Санкт-Петербурге. Роботы , 3D принтеры, конструкторы и лазеры. Запишитесь на бесплатный мастер-класс.">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
 
-    if (w.opera == "[object Opera]") {
-    d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/39897755" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!— /Yandex.Metrika counter —>
-   <script>
-          var submitted=false;
-    </script>
+		<title>Робикс | ROBX — кружок робототехники для детей</title>
 
-</head>
-<body>
-<header >
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-        <img src="icons/logo.svg" width="150" height="42" class="logo">
-          <a class="phonenumber" href="callto:+78129398748">т. 939-87-48</a>
-        <button class="clear menu-button" type="button" id="nav-icon4">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
 
-      <nav class="text-menu col-xs-6 col-sm-8 col-md-8 col-lg-10">
-        <a href="#about">О RobX</a>
-        <a href="#projects">Проекты</a>
-        <a href="#price">Стоимость</a>
-        <a href="#photo">Фотографии</a>
-        <a href="#location">Контакты</a>
-        <a href="https://vk.com/robxorg" class="vk" target="_blank">VK</a>
-        <a href="#form">Записаться</a>
-      </nav>
-      <div class="phonetag">
-        <a href="callto:+78129398748">т. 939-87-48</a>
-      </div>
-      </div>
-    </div>
-</header>
-<aside class="modal">
-<content>
-  <nav>
-      <button class="clear close-modal" type="button" onclick="$('.modal').removeClass('open')">
-        <img src="icons/close.svg"/>
-      </button>
-  </nav>
-  <h2>Спасибо!</h2>
-  <p>
-    Наш сотрудник свяжется с Вами накануне мастер-класса для подтверждения времени.
-  </p>
-</content>
-</aside>
-<section id="form">
-  <div class="container-fluid">
-    <div class="row">
-      <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Запишите ребенка на первое бесплатное занятие <br> в Кружок Робототехники!</h2>
-      <div class=" col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <img src="images/kidsfab.jpg" class="robot">
-        <hr style="margin-right: 100px;"/>
-        <div class="row stat" >
+		<link rel = "stylesheet" href = "styles/css/main-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/main-phone.css" media = "all and (max-device-width: 480px)">
 
-          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7"><span class="muted">Ближайшие занятия:</span> <span class="bottom-red"><span class="big-number">22-25</span> Декабря</span></div>
-          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"><span class="muted">Свободных мест:</span> <span class="bottom-blue"><span class="big-number">50</span></div>
-        </div>
-      </div>
-      <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.modal').addClass('open'); document.getElementById('ss-form').reset();}"></iframe>
+		<link rel = "stylesheet" href = "styles/css/inter-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/inter-phone.css" media = "all and (max-device-width: 480px)">
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted = true; yaCounter39897755.reachGoal('ORDER');" class="mb40">
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item  ss-text ss-required">
-              <div class="ss-form-entry">
-                <input type="text" name="entry.598421956" placeholder="ФИО Родителя" class="ss-q-short" id="entry_598421956" dir="auto" aria-label="ФИО Родителя" required>
-              </div>
-            </div>
-          </div>
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item  ss-text">
-              <div class="ss-form-entry">
-                <input type="text" name="entry.2103816587" placeholder="Возраст ребенка" class="ss-q-short" id="entry_2103816587" dir="auto" aria-label="Возраст ребенка  " title="">
-              </div>
-            </div>
-          </div>
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item  ss-text ss-required">
-              <div class="ss-form-entry">
-                <input type="text" name="entry.706895143" placeholder="Контактный телефон" class="ss-q-short" id="entry_706895143" dir="auto" aria-label="Контактный телефон"  required>
-              </div>
-            </div>
-          </div>
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item  ss-select ">
-              <div class="ss-form-entry">
-                <select name="entry.30508999" id="entry_30508999" aria-label="Дата занятия" >
-                  <option selected disabled>Дата занятия</option>
-		  <option value="22/12">22/12 </option>
-		  <option value="23/12">23/12 </option>
-		  <option value="24/12">24/12 (только Ленинский)</option>
-		  <option value="25/12">25/12</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item  ss-select">
-              <div class="ss-form-entry">
-                <select name="entry.1552661339" id="entry_1552661339" aria-label="Адрес класса  ">
-                  <option disabled selected>Адрес класса</option>
-                  <option value="Гражданский пр., д. 111">Гражданский пр., д. 111</option><option value="Ленинский пр., д. 151">Ленинский пр., д. 151</option>
-               </select>
-              </div>
-            </div>
-          </div>
-          <input type="hidden" name="draftResponse" value="[,,&quot;6979026500531216121&quot;]">
-          <input type="hidden" name="pageHistory" value="0">
-          <input type="hidden" name="fbzx" value="6979026500531216121">
-          <input type="submit" name="submit" value="Записаться" id="ss-submit" class="jfk-button jfk-button-action ">
+		<link rel = "stylesheet" href = "styles/css/header-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/header-phone.css" media = "all and (max-device-width: 480px)">
+	
+		<link rel = "stylesheet" href = "styles/css/register-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/register-phone.css" media = "all and (max-device-width: 480px)">
+	
+		<link rel = "stylesheet" href = "styles/css/about-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/about-phone.css" media = "all and (max-device-width: 480px)">
+	
+		<link rel = "stylesheet" href = "styles/css/videos-computer.css"  media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/videos-phone.css" media = "all and (max-device-width: 480px)">
+	
+		<link rel = "stylesheet" href = "styles/css/teachers-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/teachers-phone.css" media = "all and (max-device-width: 480px)">
+	
+		<link rel = "stylesheet" href = "styles/css/photos-computer.css"  media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/photos-phone.css" media = "all and (max-device-width: 480px)">
+
+		<link rel = "stylesheet" href = "styles/css/reviews-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/reviews-phone.css" media = "all and (max-device-width: 480px)">
+
+		<link rel = "stylesheet" href = "styles/css/addresses-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/addresses-phone.css" media = "all and (max-device-width: 480px)">
+	
+		<link rel = "stylesheet" href = "styles/css/prices-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/prices-phone.css" media = "all and (max-device-width: 480px)">
+
+		<link rel = "stylesheet" href = "styles/css/footer-computer.css" media = "all and (min-device-width: 480px)">
+		<link rel = "stylesheet" href = "styles/css/footer-phone.css" media = "all and (max-device-width: 480px)">
+
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+		<script src="scripts/slider.js"></script>
+
+		<script src="scripts/header.js"></script>
+		<script src="scripts/time.js"></script>
+		<script src="scripts/teachers.js"></script>
+		<script src="scripts/gallery.js"></script>
+		<script src="scripts/addresses.js"></script>
+		<script src="scripts/videos.js"></script>
+		<script src="scripts/reviews.js"></script>
+		<script src="scripts/events.js"></script>
+
+		<script src="scripts/map.js"></script>
+		<script>
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter39897755 = new Ya.Metrika({
+							id:39897755,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true
+						});
+					} catch(e) { }
+				});
+				var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/watch.js";
+	
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class = "logo">
+				<img src = "icons/logo.svg">
+			</div>
+
+			<a class = "burger"><img src = 'icons/burger.png'></a>
+			<a class = "cross"><img src = 'icons/cross.png'></a>
+
+			<div>
+				<a href = "#about">О RobX</a>
+			</div>
+			<div>
+				<a href = "#videos">Проекты</a>
+			</div>
+			<div>
+				<a href = '#prices'>Стоимость</a>
+			</div>
+			<div>
+				<a href = "#photos">Фото</a>
+			</div>
+			<div>
+				<a href = "#addresses">Контакты</a>
+			</div>
+			<div class = 'vk'>
+				<a href = "https://vk.com/robxorg" class = 'circled'>VK</a>
+			</div>
+			<div class = "register">
+				<a href = "#register" class = 'circled'>Записаться</a>
+			</div>
+			<div class = "phone">
+				<a class = 'circled' href = "tel:9398748">т. 939 87 48</a>
+			</div>
+		</header>
+	
+		<main>
+			<a name = "register"></a>
+			<div class = "register">
+				<div class = "content">
+					<div class = "intro">
+						<div>
+							<img src = "icons/arrows.png">
+							<div>
+								Запишите ребенка
+								на первое бесплатное занятие в Кружке Робототехники!
+							</div>
+						</div>
+						<div class = "information">
+							<div class = "next">
+								Ближайшие занятия:
+								<div>
+									27-28 Августа
+								</div>
+							</div>
+							<div class = "free">
+								Свободных мест:
+								<div>
+									50 мест
+								</div>
+							</div>
+							<div class = "rest">
+								До занятия осталось:
+								<div>
+									-
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class = "form">
+						<script type="text/javascript">var submitted=false;</script>
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.modal').addClass('open'); document.getElementById('ss-form').reset();}"></iframe>
+
+								<form action="http://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted = true; yaCounter39897755.reachGoal('ORDER');">
+									<div class="ss-form-question errorbox-good" role="listitem">
+										<div dir="auto" class="ss-item  ss-text ss-required">
+											<div class="ss-form-entry">
+												<input type="text" name="entry.598421956" placeholder="ФИО Родителя" class="ss-q-short" id="entry_598421956" dir="auto" aria-label="ФИО Родителя" required="">
+											</div>
+										</div>
+									</div>
+		<div class="ss-form-question errorbox-good" role="listitem">
+			<div dir="auto" class="ss-item  ss-text">
+				<div class="ss-form-entry">
+					<input type="text" name="entry.2103816587" placeholder="Возраст ребенка" class="ss-q-short" id="entry_2103816587" dir="auto" aria-label="Возраст ребенка  " title="">
+				</div>
+			</div>
+		</div>
+		<div class="ss-form-question errorbox-good" role="listitem">
+          		<div dir="auto" class="ss-item  ss-text ss-required">
+				<div class="ss-form-entry">
+					<input type="text" name="entry.706895143" placeholder="Контактный телефон" class="ss-q-short" id="entry_706895143" dir="auto" aria-label="Контактный телефон" required="">
+				</div>
+			</div>
+		</div>
+		<div class="ss-form-question errorbox-good" role="listitem">
+			<div dir="auto" class="ss-item  ss-select ">
+				<div class="ss-form-entry">
+					<select name="entry.30508999" id="entry_30508999" aria-label="Дата занятия">
+						<option selected="" disabled="">Дата занятия</option>
+						<option value="15/12">15/12 </option>
+						<option value="16/12">16/12 </option>
+						<option value="17/12">17/12 (только Ленинский)</option>
+						<option value="18/12">18/12</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="ss-form-question errorbox-good" role="listitem">
+			<div dir="auto" class="ss-item  ss-select">
+				<div class="ss-form-entry">
+					<select name="entry.1552661339" id="entry_1552661339" aria-label="Адрес класса  ">
+						<option disabled="" selected="">Адрес класса</option>
+						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111</option><option value="Ленинский пр., д. 151">Ленинский пр., д. 151</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" name="draftResponse" value="[,,&quot;6979026500531216121&quot;]">
+		<input type="hidden" name="pageHistory" value="0">
+		<input type="hidden" name="fbzx" value="6979026500531216121">
+		<input type="submit" name="submit" value="Записаться" id="ss-submit" class="jfk-button jfk-button-action ">
         </form>
-      </div>
-      <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <hr/>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <small class="muted">*Мы уважаем вашу конфиденциальность, введенная в форму информация не будет передаваться третьим лицам.</small>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            <small class="muted">
-              <svg width="10" height="10">
-                <circle cx="4" cy="6" r="4" fill="rgb(241,90,41)" />
-              </svg>
-              Заполняя настоящую форму, в соответствии с требованиями статьи 9 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных», Вы подтверждаете свое согласие на обработку вносимых в форму персональных данных, лицом оказывающим услуги на основании данной формы
-            </small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="about" class="bg-white">
-  <div class="container-fluid ">
-    <div class="row ">
-      <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Чему учатся дети на наших занятиях?</h2>
-      <div class="lesson col-xs-6 col-sm-6 col-md-4 col-lg-4">
-        <picture>
-        <img src="icons/plus-minus.svg" width="195" height="88"></picture>
-        <hr class="ml60 mr60"/>
-        <h3>Физика и электроника</h3>
-      </div>
-      <div class="lesson col-xs-6 col-sm-6 col-md-4 col-lg-4">
-        <picture>
-        <img src="icons/tag.svg" width="176" height="69">
-        </picture>
-        <hr class="ml60 mr60"/>
-        <h3>Программирование</h3>
-      </div>
-      <div class="lesson col-xs-6 col-sm-6 col-md-4 col-lg-4 ">
-        <picture>
-          <img src="icons/laser.svg" width="153" height="139">
-        </picture>
-        <hr class="ml60 mr60"/>
-        <h3>Резка на лазере</h3>
-      </div>
-      <div class="lesson col-xs-6 col-sm-6 col-md-4 col-lg-4">
-        <picture>
-          <img src="icons/3d-printer.svg" width="181" height="125">
-        </picture>
-        <hr class="ml60 mr60"/>
-        <h3>Печать на 3D-принтере</h3>
-      </div>
-      <div class="lesson col-xs-6 col-sm-6 col-md-4 col-lg-4">
-        <picture>
-          <img src="icons/modeling.svg" with="91" height="126">
-        </picture>
-        <hr class="ml60 mr60"/>
-        <h3>3D и 2D моделирование</h3>
-      </div>
-      <div class="lesson col-xs-6 col-sm-6 col-md-4 col-lg-4">
-        <picture><img src="icons/gear.svg" width="137" height="137"></picture>
-        <hr class="ml60 mr60"/>
-        <h3>Создание роботов и устройств</h3>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="projects">
-  <div class="container-fluid ">
-    <div class="row mb20">
-    <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12 ">Проекты, которые делают дети</h2>
-      <div class="text-center col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <iframe width="500" height="280" src="https://www.youtube.com/embed/8tjduZiy1-w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen id="videoframe"></iframe>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-        <div id="accordion">
-          <h4 class="accordion-toggle" data-src="https://www.youtube.com/embed/8tjduZiy1-w?rel=0&amp;showinfo=0">
-            <img src="icons/video.svg" width="31" height="25" class="ib"> <span class="ib"><span class="name">Никита.</span> Мультики</span></h4>
-          <div class="accordion-content default">
-            <iframe width="550" height="310" src="https://www.youtube.com/embed/8tjduZiy1-w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-            <p>Никита рассказывает о том, как на занятии ему удалось сделать свой мультик. Ребята написали специальную программу для LED-экрана.</p>
-          </div>
-          <h4 class="accordion-toggle" data-src="https://www.youtube.com/embed/VAWGhN5XJFA?rel=0&amp;showinfo=0">
-            <img src="icons/video.svg" width="31" height="25" class="ib"> <span><span class="name">Стёпа. </span>3D-моделирование в OpenSCAD</span>
-          </h4>
-          <div class="accordion-content">
-            <iframe width="550" height="310" src="https://www.youtube.com/embed/VAWGhN5XJFA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-            <p>Стёпа создаёт объёмную фигурку в программе OpenSCAD. Подобные модельки дети печатают на нашем 3D-принтере.</p>
-          </div>
-          <h4 class="accordion-toggle"  data-src="https://www.youtube.com/embed/flspC5bX7eU?rel=0&amp;showinfo=0">
-              <img src="icons/video.svg" width="31" height="25" class="ib"> <span><span class="name">Полина. </span>Конденсатор</span>
-          </h4>
-          <div class="accordion-content">
-            <iframe width="550" height="310" src="https://www.youtube.com/embed/flspC5bX7eU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-            <p>Полина объясняет, что такое конденсатор. Она составила схему и программу, и показывает, как всё это работает.</p>
-          </div>
-          <h4 class="accordion-toggle" data-src="https://www.youtube.com/embed/WV2m-Lo-OsA?rel=0&amp;showinfo=0">
-              <img src="icons/video.svg"  width="31" height="25" class="ib"> <span><span class="name">Катя. </span>Электромагниты и магнитное поле</span>
-          </h4>
-          <div class="accordion-content">
-            <iframe width="550" height="310" src="https://www.youtube.com/embed/WV2m-Lo-OsA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-            <p>Катя демонстрирует, как работает электромагнитная катушка. Затем у доски она объясняет принцип действия магнитного поля.</p>
-          </div>
-          <h4 class="accordion-toggle" data-src="https://www.youtube.com/embed/GLKrts26Sto?rel=0&amp;showinfo=0">
-              <img src="icons/video.svg"  width="31" height="25" class="ib"> <span><span class="name">Гоша. </span>Электрическая цепь</span>
-          </h4>
-          <div class="accordion-content">
-            <iframe width="550" height="310" src="https://www.youtube.com/embed/GLKrts26Sto?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-            <p>Гоша описывает путь электричества по электрической цепи. При помощи наглядной схемы он объясняет принцип работы гальванометра, конденсатора и других элементов цепи.</p>
-          </div>
-        </div>
-      <div>
-    </div>
-  </div>
-</section>
-<section id="teachers" class="bg-white">
-  <div class="container-fluid ">
-    <div class="row ">
-      <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Преподаватели</h2>
-      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <img src="photos/teacher1.png">
-        <h3>Дмитрий Спивак</h3>
-        <p>Основатель лаборатории технического творчества для детей Fab Lab в г. Санкт-Петербурге. Проходил стажировку в Fab Lab Barcelona (г. Барселона, Испания) и Fab Lab Aalto (г. Хельсинки, Финляндия). Преподавал современные технологии в 67 Гимназии Петроградского р-на г. Санкт-Петербурга</p>
-      </div>
-      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <img src="photos/teacher2.png">
-        <h3>Виталий Филипповский</h3>
-        <p>Магистр СПБГУ, МАТМЕХ, специальность: фундаментальная информатика и ифнормационные технологии. 2 года работы в кружке роботехники Kidsfab. Готовит детей к соревнованиям по робототехнике на базе Arduino IDE (C/C++)</p>
-      </div>
-      <div class="teacher col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <img src="photos/teacher3.png">
-        <h3>Анастасия Подорова</h3>
-        <p>Студент 4 курса СПБПУ (Политех), кафедра Телематики при ЦНИИ РТК. Сфера научных интересов: программирование в Robot C+ , C++ , программирование микроконтроллеров, алгоритмы взаимодействия групп роботов. Опыт работы в кружке робототехники - 1 год</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="price" class="bg-lightgray">
-  <div class="container-fluid ">
-    <div class="row ">
-      <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Стоимость занятий</h2>
-      <div class="pricing col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <img src="icons/ruble.svg" width="81" height="104" class="ib ruble">
-        <div class="ib vat subscription">
-          <h3 class="mt0 mb0">Абонемент на 1 месяц</h3>
-          <div class="cost mb40">4 000 руб.</div>
-            <br />
-          <h3 class="mt0 mb0">Абонемент на 6 месяцев</h3>
-          <div class="cost">20 000 руб.</div>
-        </div>
-      </div>
-      <div class="pricing col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <img src="icons/percent.svg" width="105" height="105" class="ib percent">
-          <div class="ib discount">
-            <h3 class="mt0 mb0">Более 1 ребенка в семье</h3>
-            <small>(стоимость за каждого ребенка)</small>
-            <div class="cost">3 000 руб.</div>
-            <br/>
-            <h3 class="mt0 mb0">Запись на мастер-классе</h3>
-            <small>(стоимость за первый месяц)</small>
-            <div class="cost">3 000 руб.</div>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-<section id="photo">
-  <div class="container-fluid ">
-    <div class="row ">
-      <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Фотографии с занятий</h2>
-</div>
-<div class="row">
-      <div class="banner text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
-	<ul>
-	<li><img src="photos/photo1.jpg"></li>
-	<li><img src="photos/photo2.jpg"></li>
-	<li><img src="photos/photo3.jpg"></li>
-	<li><img src="photos/photo4.jpg"></li>
-	<li><img src="photos/photo5.jpg"></li>
-	<li><img src="photos/photo6.jpg"></li>
-	<li><img src="photos/photo7.jpg"></li>
-	</ul>
-	</div>
+					</div>
+				</div>
+				<div class = "footnote">
+					<div>
+						*Мы уважаем вашу конфиденциальность, введенная в форму информация не будет передаваться третьим лицам.
+					</div>
+					<div>
+						Заполняя настоящую форму, в соответствии с требованиями статьи 9 Федерального закона от 27.07.2006 No 152-ФЗ «О персональных данных»,
+						Вы подтверждаете свое согласие на обработку вносимых в форму персональных данных, лицом оказывающим услуги на основании данной формы
+					</div>
+				</div>
+			</div>
+			<a name = "about"></a>
+			<div class = "about">
+				<h1>
+					Чему учатся дети на наших занятиях?
+				</h1>
+				<div class = "list">
+					<div>
+						<div class = "image">
+							<img src = "icons/1.svg">
+						</div>
+						<div>
+							Физика и электроника
+						</div>
+					</div>
+					<div>
+						<div class = "image">
+							<img src = "icons/2.svg">
+						</div>
+						<div>
+							Программирование		
+						</div>
+	
+					</div>
+					<div>
+						<div class = "image">
+							<img src = "icons/3.svg">
+						</div>
+						<div>
+							Печать на 3D принтере
+						</div>
+					</div>
+					<div>
+						<div class = "image">
+							<img src = "icons/4.svg">
+						</div>
+	
+						<div>
+								Резка на лазере
+						</div>
+					</div>
+					<div>
+						<div class = "image">
+							<img src = "icons/5.svg">			
+						</div>
+						<div>
+							3D и 2D моделирование
+						</div>
+					</div>
+					<div>
+						<div class = "image">
+							<img src = "icons/6.svg">
+						</div>
+						<div>
+							Создание роботов и устройств
+						</div>
+		
+					</div>
+				</div>
+			</div>
+			<a name = "videos"></a>
+			<div class = "videos">
+				<div class = "names">
+					<h1>
+						Проекты, которые делают дети
+					</h1>
+					<div link = "http://www.youtube.com/embed/8tjduZiy1-w?rel=0&showinfo=0" >
+						<h2>
+							Никита. Мультики
+						</h2>
+						<div>
+							Никита рассказывает о том, как на занятии ему удалось сделать свой мультик. Ребята написали специальную программу для LED-экрана.
+						</div>
+					</div>
+					<div link = "http://www.youtube.com/embed/VAWGhN5XJFA?rel=0&showinfo=0">
+						<h2>
+							Стёпа. 3D-моделирование в OpenSCAD
+						</h2>
+						<div>
+							Стёпа создаёт объёмную фигурку в программе OpenSCAD. Подобные модельки дети печатают на нашем 3D-принтере.
+						</div>
+					</div>
+		
+					<div link = "http://www.youtube.com/embed/flspC5bX7eU?rel=0&showinfo=0">
+						<h2>
+							Полина. Конденсатор
+						</h2>
+						<div>
+							Полина объясняет, что такое конденсатор. Она составила схему и программу, и показывает, как всё это работает.
+						</div>
+					</div>
+					<div link = "http://www.youtube.com/embed/WV2m-Lo-OsA?rel=0&showinfo=0">
+						<h2>
+							Катя. Электромагниты и магнитное поле
+						</h2>
+						<div>
+							Катя демонстрирует, как работает электромагнитная катушка. Затем у доски она объясняет принцип действия магнитного поля.
+						</div>
+					</div>
+					<div link = "http://www.youtube.com/embed/GLKrts26Sto?rel=0&showinfo=0">
+						<h2>
+							Гоша. Электрическая цепь
+						</h2>
+						<div>
+							Гоша описывает путь электричества по электрической цепи. При помощи наглядной схемы он объясняет принцип работы гальванометра, 
+							конденсатора и других элементов цепи.
+						</div>
+					</div>
+				</div>
+				<div class = "video">
+					<iframe frameborder="0"></iframe>
+				</div>
+			</div>
+			<div class = 'inter'>
+				<div>Запишитесь на первое бесплатное занятие</div>
+				<a href = "#register">Записаться</a>
+			</div>
 
-    </div>
-    </div>
-</section>
-<section id="location" class="bg-white">
-  <div class="container-fluid ">
-    <div class="row ">
-      <img src="icons/location.svg" with="91" height="106" style="display: block; margin: auto;">
-      <h2 class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Адреса классов</h2>
+			<div class = "teachers">
+				<h1>
+					Преподаватели
+				</h1>
+				<div class = "list">
+					<div class = "info">
+						<img src = 'photos/teacher1.png'>
+						<div class = "name">
+							<div class = 'first'>
+								Дмитрий
+							</div>
+							<div class = 'last'>
+								Спивак
+							</div>
+						</div>
+						<div class = "bio">
+							Основатель лаборатории технического творчества для детей Fab Lab в г. Санкт-Петербурге. 
+							Проходил стажировку в Fab Lab Barcelona (г. Барселона, Испания) и Fab Lab Aalto (г. Хельсинки, Финляндия). 
+							Преподавал современные технологии в 67 Гимназии Петроградского р-на г. Санкт-Петербурга
+						</div>
+					</div>
+					<div class = "info">
+						<img src = 'photos/teacher2.png'>
+						<div class = "name">
+							<div class = 'first'>
+								Виталий
+							</div>
+							<div class = 'last'>
+								 Филипповский
+							</div>
+						</div>
+						<div class = "bio">
+							Магистр СПБГУ , МАТМЕХ, специальность: фундаментальная информатика и ифнормационные технологии. 
+							2 года работы в кружке роботехники Kidsfab. Готовит детей к соревнованиям по робототехнике на базе Arduino IDE (C/C++)
+						</div>
+					</div>
+					<div class = "info">
+						<img src = 'photos/teacher3.png'>
+						<div class = "name">
+							<div class = 'first'>
+								Анастасия
+							</div>
+							<div class = 'last'>
+								Подорова
+							</div>
+						</div>
+						<div class = "bio">
+							Студент 4 курса СПБПУ (Политех), кафедра Телематики при ЦНИИ РТК. 
+							Свера научных интересов: программироние в Robot C+ , C++ , программирование микроконтроллеров, 
+							алгоритмы взаимодействия групп роботов. Опыт работы в кружке робототехники - 1 год
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-      <ul class='location'>
-        <li class="h-card">
-          <h3 class="p-street-address ">Медиков пр., д.5</h3>
-          <small class="p-locality">(Петроградский район)</small>
-          <div class="p-metro m-blue">м. Петроградская</div>
-        </li>
-        <li class="h-card">
-          <h3 class="p-street-address">Заневский пр., 53 к.2</h3>
-          <small class="p-locality">(Красногвардейский район)</small>
-          <div class="p-metro m-orange">м. Новочеркасская</div>
-        </li>
-        <li class="h-card">
-          <h3 class="p-street-address">Трамвайный пр., д.20</h3>
-          <small class="p-locality">(Кировский район)</small>
-          <div class="p-metro m-red">м. Ленинский проспект</div>
-        </li>
-        <li class="h-card">
-          <h3 class="p-street-address">Выборгское шоссе, д. 156</h3>
-          <small class="p-locality">(Выборгский район)</small>
-          <div class="p-metro m-blue">м. Проспект Просвещения</div>
-        </li>
-          <li class="h-card">
-            <h3 class="p-street-address">Гражданский пр., д. 111</h3>
-            <small class="p-locality">(Калининский район)</small>
-            <div class="p-metro m-red">м. Гражданский проспект</div>
-          </li>
-          <li class="h-card">
-            <h3 class="p-street-address">Ленинский пр., д. 151</h3>
-            <small class="p-locality">(Московский район)</small>
-            <div class="p-metro m-blue">м. Московская</div>
-          </li>
-        </ul>
-      </div>
-      <div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5">
-        <div id="map"></div>
+			<a name = 'prices'></a>
+			<div class = 'prices'>
+				<h1>Стоимость занятий</h1>
 
-      </div>
+				<div class = 'offer'>
+					<h2>Более одного ребенка в семье:</h2>
+					стоимость абонемента при оплате за 1 месяц составляет 3000 руб. за каждого ребенка. 
+					При покупке абонемента на 3 и 6 месяцев действуют те же скидки.
+				</div>
+				<div class = 'list'>
+					<h2>Выберите абонемент</h2>
+					<div class = 'price'>
+						<div class = 'duration'>1 месяц</div>
+						<div class = 'value'>4 000 р.</div>
+						<div class = 'saving'>экономия 0%</div>
+					</div>
 
-    </div>
-  </div>
-</section>
-<footer>
-  <div class="container-fluid ">
-    <div class="row ">
-      <div class="location col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <h5 class="mt0 text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">Больше детских проектов, видео и фотографий в нашей группе в VK. Подписывайтесь.</h5>
-        <script type="text/javascript" src="//vk.com/js/api/openapi.js?130"></script>
-        <!-- VK Widget -->
-        <div id="vk_groups"></div>
-        <script type="text/javascript">
-          VK.Widgets.Group("vk_groups", {mode: 3, width: "220", height: "400", color1: 'FFFFFF', color2: '000000', color3: '5E81A8'}, 69501379);
-        </script>
-      </div>
-      <div class="phone col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <img src="icons/phone.svg" width="82" height="82">
-        <div style="padding-top: 10px;">+7 (812) 939-87-48</div>
-      </div>
-      <div class="email col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <img src="icons/email.svg" width="107" height="73">
-        <div style="padding-top: 20px;">kidsfabrus@gmail.com</div>
-      </div>
-      <div class="copyright location col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <small>
-            Copyright © 2016 ROBX.<br/>
-            All rights reserved.<br/>
-            Tel. (812) 939-87-48<br/>
-          </small>
-        <br/>
-          <small>Услуги оказывает: ООО "Пневматика"<br/>
-          Тел.: (812) 939-87-48,<br/>
-          ИНН 7804455018, ОГРН 1117847052289<br/>
-          </small>
-      </div>
-    </div>
-  </div>
-</footer>
-  <script>
-    function initMap() {
-      var locations = [
-        {lat: 59.9701, lng: 30.3158},
-        {lat: 59.928, lng: 30.4255},
-        {lat: 59.8547, lng: 30.2715},
-        {lat: 60.0607, lng: 30.304},
-        {lat: 60.030, lng: 30.415},
-        {lat: 59.851, lng: 30.3014}
-      ];
-       var marker0 = new google.maps.Marker({
-        position: locations[0],
-        map: map,
-        icon: 'icons/location-small.svg',
-        title: 'Класс на Медиков (третий этаж, налево)'
-      });
-      var marker1 = new google.maps.Marker({
-       position: locations[1],
-       map: map,
-       icon: 'icons/location-small.svg',
-       title: 'Класс на Заневском (школа)'
-     });
-     var marker2 = new google.maps.Marker({
-      position: locations[2],
-      map: map,
-    icon: 'icons/location-small.svg',
-      title: 'Класс на Трамвайном '
-    });
-    var marker3 = new google.maps.Marker({
-     position: locations[3],
-     map: map,
-     icon: 'icons/location-small.svg',
-     title: 'Выборгское шоссе'
-   });
-   var marker4 = new google.maps.Marker({
-    position: locations[4],
-    map: map,
-    icon: 'icons/location-small.svg',
-    title: 'Класс на Гражданском проспекте'
-  });
-  var marker5 = new google.maps.Marker({
-   position: locations[5],
-   map: map,
-   icon: 'icons/location-small.svg',
-   title: 'Класс на Ленинском проспекте'
- });
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
-        center: locations[0],
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-          mapTypeIds: ['roadmap', 'terrain']
-        }
-      });
+					<div class = 'price'>
+						<div class = 'duration'>3 месяца</div>
+						<div class = 'value'>10 800 р.</div>
+						<div class = 'saving'>экономия 10%</div>
+					</div>
 
+					<div class = 'price'>
+						<div class = 'duration'>6 месяцев</div>
+						<div class = 'value'>19 200 р.</div>
+						<div class = 'saving'>экономия 20%</div>
+					</div>
+				</div>
+			</div>
+			<div class = 'inter'>
+				<div>Запишитесь на первое бесплатное занятие</div>
+				<a href = "#register">Записаться</a>
+			</div>
+			<a name = "photos"></a>
+			<div class = "photos">
+				<h1>Фотографии с занятий</h1>
+				<div class = "galery">
+					<img src = "photos/photo1.jpg">
+					<img src = "photos/photo2.jpg">
+					<img src = "photos/photo3.jpg">
+					<img src = "photos/photo4.jpg">
+					<img src = "photos/photo5.jpg">
+					<img src = "photos/photo6.jpg">
+					<img src = "photos/photo7.jpg">
+				</div>
+			</div>
 
-      marker0.setMap(map);
-      marker1.setMap(map);
-      marker2.setMap(map);
-      marker3.setMap(map);
-      marker4.setMap(map);
-      marker5.setMap(map);
-    }
-  </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6lp_3Y5nPvcK-cUidrl9w7mPZoc2M6P8&callback=initMap">
-  </script>
-</body>
+			<div class = 'reviews'>
+				<h1>Отзывы</h1>
+				<div class = 'list'>
+					<div class = 'review'>
+						<img src = 'photos/comment-1.png'>
+						<img src = 'photos/comment-1-m.png'>
+					</div>
+					<div class = 'review'>
+						<img src = 'photos/comment-2.png'>
+						<img src = 'photos/comment-2-m.png'>
+					</div>
+					<div class = 'review'>
+						<img src = 'photos/comment-3.png'>
+						<img src = 'photos/comment-3-m.png'>
+					</div>
+					<div class = 'review'>
+						<img src = 'photos/comment-4.png'>
+						<img src = 'photos/comment-4-m.png'>
+					</div>
+					<div class = 'review'>
+						<img src = 'photos/comment-5.png'>
+						<img src = 'photos/comment-5-m.png'>
+					</div>
+					<div class = 'review'>
+						<img src = 'photos/comment-6.png'>
+						<img src = 'photos/comment-6-m.png'>
+					</div>
+				</div>
+			</div>
+
+			<a name = "addresses"></a>
+			<div class = "addresses">
+				<div class = "list">
+					<h2>Адреса классов</h2>
+					<div class = "address">
+						<div>Медиков пр., д.5</div>
+						<div>(Ленполиграфмаш)</div>
+						<div>м. Петроградская</div>
+					</div>
+					<div class = "address">
+						<div>Заневский пр., 53 к.2</div>
+						<div>(Красногвардейский район)</div>
+						<div>м. Новочеркасская</div>
+					</div>
+					<div class = "address">
+						<div>Гражданский пр., д. 111</div>
+						<div>(Калининский район)</div>
+						<div>м. Гражданский проспект</div>
+					</div>
+					<div class = "address">
+						<div>Трамвайный пр., д.20 </div>
+						<div>(Кировский район) </div>
+						<div>м. Ленинский пр.</div>
+					</div>
+					<div class = "address">
+						<div>Выборгское шоссе, д. 156 </div>
+						<div>(Выборгский район) </div>
+						<div>м. Проспект Просвещения</div>
+					</div>
+					<div class = "address">
+						<div>Ленинский пр., д. 151 </div>
+						<div>(Московский район) </div>
+						<div>м. Московская</div>
+					</div>
+				</div>
+				<div class = "map-wraper">
+					<div id = "map">
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class = "vk-widget">
+				Больше детских проектов , видео, фото в группе VK, подписывайтесь.
+				<script type="text/javascript" src="http://vk.com/js/api/openapi.js?136"></script>
+				<div id="vk_groups"></div>
+				<script type="text/javascript">
+					VK.Widgets.Group("vk_groups", {mode: 3, width: "220"}, 69501379);
+				</script>
+			</div>
+			<div class = "phone">
+				<div>
+					<img src = "icons/phone.svg">
+				</div>
+				<div>
+					<a href = 'tel:+78129398748'>+7 (812) 939-87-48</a>
+				</div>
+			</div>
+			<div class = "email">
+				<div>
+					<img src = "icons/mail.svg">
+				</div>
+				<div>
+					<a href = "mailto:robxorg@gmail.com">robxorg@gmail.com</a>
+				</div>
+			</div>
+			<div class = "info">
+				<div>
+					Copyright © 2016 Fab Kids. 
+					<br>
+					All rights reserved.
+					<br>
+					Tel. (812) 939-87-48
+				</div>
+				<div>
+					Услуги оказывает: ООО "Робикс"
+					<br>
+					Тел.: (812) 939-87-48,
+					<br>
+					ИНН 7804455018, ОГРН 1117847052289
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdON7rtEjNA84pctrH2T6yeR1OXyk0cpo&callback=initMap" async defer></script>
 </html>
