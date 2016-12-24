@@ -1,0 +1,28 @@
+@import 'colors.scss';
+
+%row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	padding-top: 70px;
+	padding-bottom: 80px;
+
+	border-bottom: 3px solid white;
+}
+
+%red {
+	color: white;
+	background-color: $red;
+}
+
+%gray {
+	color: $black;
+	background-color: $gray;
+}
+
+%blue {
+	color: white;
+	background-color: $blue;
+}
+
