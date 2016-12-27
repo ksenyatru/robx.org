@@ -1,19 +1,19 @@
 @import 'common.scss';
 
 main > .teachers {
-	flex-direction: column;
-	justify-content: center;
+	@include flex-direction(column);
+	@include justify-content(center);
 
 	.list {
-		display: flex;
-		justify-content: space-between;
+		@extend %flexbox;
+		@include justify-content(space-between);
 		padding-bottom: 20px;
 		padding-top: 10px;
 
 		.info {
-			display: flex;
-			flex-wrap: wrap;		
-			justify-content: space-between;
+			@extend %flexbox;
+			@include flex-wrap(wrap);
+			@include justify-content(space-between);
 
 			@media all and (min-device-width: $large) {
 				width: 320px;
@@ -38,7 +38,7 @@ main > .teachers {
 
 				padding-bottom: 10px;
 
-				display: flex;
+				@extend %flexbox;
 				flex-direction: column;
 			
 				* {

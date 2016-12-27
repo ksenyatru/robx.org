@@ -1,3 +1,5 @@
+@import 'common.scss';
+
 main > .photos {
 	background-color: rgb(222, 222, 222);
 	border-bottom: 3px solid white;
@@ -14,7 +16,8 @@ main > .photos {
 
 		overflow-x: hidden;
 		overflow-y: hidden;
-		display: flex;
+		
+		@extend %flexbox;
 
 		position: relative;
 

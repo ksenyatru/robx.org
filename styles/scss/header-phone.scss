@@ -5,11 +5,6 @@ header {
 	top: 0px;
 
 	width: 100%;
-
-	display: flex;
-	flex-direction: row;	
-	flex-wrap: wrap;
-	justify-content: space-between;
 	
 	z-index: 100;
 
@@ -21,47 +16,99 @@ header {
 		cursor: pointer;
 	}
 
+	* {
+		vertical-align: top;
+	}
+
 	
 	& > * {
 		display: none;
+		border-bottom: 2px solid white;
+	}
 
-		&.cross {
-			display: none !important;
-		}
+	& > .logo {
+		@extend %inline-flex;
+		@include justify-content(flex-start);
 
-		&.burger, &.cross {
-			display: flex;
-			justify-content: flex-end;
+		height: 70px;
+		width: 50%;
 
-			padding-right: 10vw;
-			min-width: 40vw;
-			height: 70px;
-
-			border-bottom: 2px solid white;
-
-			img {
-				margin-top: auto;
-				margin-bottom: auto;
-			}
-		}
-
-		&.logo {
-			display: flex;
-		
-			padding-left: 10vw;
-			min-width: 40vw;
-			height: 70px;
-
+		& > img {
+			height: 30px;
 			margin-top: auto;
 			margin-bottom: auto;
 
-			border-bottom: 2px solid white;
+			padding-left: 35px;
+		}
+	}
 
-			img {
-				height: 30px;
+	& > .burger {
+		@extend %inline-flex;
+		@include justify-content(flex-end);
+
+		height: 70px;
+		width: 50%;
+
+		& > img {
+			height: 19px;
+			margin-top: auto;
+			margin-bottom: auto;
+
+			padding-right: 35px;
+		}
+	}
+
+	&.open {
+		& > * {
+			* {
 				margin-top: auto;
 				margin-bottom: auto;
 			}
+		}
+
+
+		& > .cross {
+			@extend %inline-flex;
+			@include justify-content(flex-end);
+
+			height: 70px;
+			width: 50%;
+
+			& > img {
+				height: 19px;
+				margin-top: auto;
+				margin-bottom: auto;
+
+				padding-right: 35px;
+			}
+		}
+
+		& > .burger, & > .vk {
+			display: none;
+		}
+
+		& > .register {
+			border: 0;
+			width: 100% !important;
+
+			background-color: $red;
+		}
+
+		& > *:nth-child(n + 4) {
+			@extend %inline-flex;
+			@include justify-content(center);
+
+
+			height: calc(25vh - 20px);
+			width: calc(50% - 1px);
+		}
+
+		& > *:nth-child(2n + 4) {
+			border-right: 2px solid white !important;
+		}
+
+		& > .phone {
+			border-right: 0 !important;
 		}
 	}
 
@@ -69,50 +116,7 @@ header {
 		display: none;
 	}
 
-	&.open {
-		border-bottom: 0;
-
-		.burger {
-			display: none;
-		}
 	
-		.cross {
-			display: flex !important;
-		}
-
-		& > div:nth-child(2n+4) {
-			border-right: 2px solid white;
-		}
-
-
-		& > div:nth-child(n+2) {
-			width: calc(50% - 1px);
-			height: calc(25vh - 20px);
-			border-bottom: 2px solid white;
-			color: white;
-
-			display: flex;
-			justify-content: center;
-	
-
-			* {
-				margin-top: auto;
-				margin-bottom: auto;
-			}
-			
-			&.vk {
-				display: none !important;
-			}
-
-			&.register {
-				width: 100%;
-				background-color: rgb(237, 70, 47);
-				border: 0 !important;
-
-				order: 10;
-			}
-		}
-	}
 
 	@extend %blue;
 }

@@ -1,8 +1,8 @@
 @import 'common.scss';
 
 main > .inter {
-	display: flex;
-	justify-content: center;	
+	@extend %flexbox;
+	@include justify-content(center);
 
 	min-height: 100px;
 

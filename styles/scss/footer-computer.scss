@@ -1,15 +1,16 @@
 @import 'common.scss';
 
 footer {
-	display: flex;
-	justify-content: center;
+	@extend %flexbox;
+	@include justify-content(center);
 
 	background-color: rgb(240, 240, 240);
 
 	& > div {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+		@extend %flexbox;
+		@include justify-content(space-around);
+		@include flex-direction(column);
+
 		@media all and (min-device-width: $large) {
 			width: 268px;
 		}
@@ -28,8 +29,9 @@ footer {
 		}
 
 		&.vk-widget {
-			display: flex;
-			justify-content: center;
+			@extend %flexbox;
+			@include justify-content(center);
+			
 			text-align: center;
 			
 			padding-left: 10px;
@@ -67,9 +69,10 @@ footer {
 
 		&.phone, &.email {
 			& > div:first-child {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				@extend %flexbox;
+				@include flex-direction(column);
+				@include justify-content(center);
+
 				width: 40%;
 				height: 40%;
 

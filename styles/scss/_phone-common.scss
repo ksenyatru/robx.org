@@ -1,9 +1,10 @@
 @import 'colors.scss';
+@import 'flex.scss';
 
 %row {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	@extend %flexbox;
+	@include flex-direction(column);
+	@include justify-content(center);
 
 	padding-top: 70px;
 	padding-bottom: 80px;

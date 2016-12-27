@@ -1,9 +1,9 @@
 @import 'common.scss';
 
 main > .prices {
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	@include flex-direction(row);
+	@include justify-content(space-between);
+	@include flex-wrap(wrap);
 
 	@media all and (min-device-width: $large) {
 		padding-left: calc(50% -  540px);
@@ -48,10 +48,10 @@ main > .prices {
 	}
 
 	.list {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		@extend %flexbox;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include justify-content(space-between);
 
 		margin-bottom: auto;
 

@@ -1,13 +1,13 @@
 @import 'common.scss';
 
 main > .reviews {
-	flex-direction: column;
-	justify-content: center;
+	@include flex-direction(column);
+	@include justify-content(center);
 	overflow: hidden;
 
 	.list {
-		display: flex;
-		flex-direction: row;
+		@extend %flexbox;
+		@include flex-direction(row);
 
 		overflow: hidden;
 		

@@ -7,9 +7,9 @@ footer {
 	padding-right: 5vw; 
 
 	& > div {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		@extend %flexbox;
+		@include flex-direction(column);
+		@include justify-content(center);
 
 		border-bottom: 1px solid gray;
 
@@ -23,9 +23,9 @@ footer {
 		}
 
 		&.phone, &.email {
-			display: flex;
-			justify-content: flex-start;
-			flex-direction: row;
+			@extend %flexbox;
+			@include justify-content(flex-start);
+			@include flex-direction(row);
 
 			& > div {
 				margin-top: auto;
@@ -37,9 +37,9 @@ footer {
 			div > img:first-child {
 				width: 15vw;
 				height: 15vw;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				@extend %flexbox;
+				@include flex-direction(column);
+				@include justify-content(center);
 			
 				padding-right: 5vw;
 			}

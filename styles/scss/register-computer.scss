@@ -1,15 +1,15 @@
 @import 'common.scss';
 
 main > .register {
-	flex-direction: column;
-	justify-content: center;
+	@include flex-direction(column);
+	@include justify-content(center);
 
 	padding-top: 90px;
 	padding-bottom: 90px;
 
 	& > * {
-		display: flex;
-		justify-content: space-between;
+		@extend %flexbox;
+		@include justify-content(space-between);
 	}
 
 	.content {
@@ -33,9 +33,9 @@ main > .register {
 				@media all and (max-device-width: $large - 1) {
 				}
 
-				display: flex;
-				flex-direction: row-reverse;
-				justify-content: space-between;
+				@extend %flexbox;
+				@include flex-direction(row-reverse);
+				@include justify-content(space-between);
 
 				padding-bottom: 20px;
 				div {
@@ -52,8 +52,8 @@ main > .register {
 			}
 
 			.information {
-				display: flex;
-				justify-content: space-between;
+				@extend %flexbox;
+				@include justify-content(space-between);
 				
 				& > div {
 					width: 32%;

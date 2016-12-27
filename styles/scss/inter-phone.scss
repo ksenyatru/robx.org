@@ -1,8 +1,8 @@
 @import 'phone-common.scss';
 
 main > .inter {
-	display: flex;
-	flex-direction: column;
+	@extend %flexbox;
+	@include flex-direction(column);
 
 	padding-top: 30px;
 	padding-bottom: 30px;
