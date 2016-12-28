@@ -57,6 +57,32 @@ main > .register {
 				display: none;
 			}
 
+			.notification {
+				display: none;
+			}
+
+			&.sent > form {
+				display: none;
+			}
+
+			&.sent > .notification {
+				display: block;
+
+				border: 5px solid $red;
+				font-size: 16pt;
+
+				text-align: center;
+
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+			
+				width: 100%;
+				height: 100%;
+				padding: 5%;
+			} 
+
+
 			input[type=text] {
 				width: 100%;
 				
