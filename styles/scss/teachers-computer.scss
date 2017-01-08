@@ -15,11 +15,11 @@ main > .teachers {
 			@include flex-wrap(wrap);
 			@include justify-content(space-between);
 
-			@media all and (min-device-width: $large) {
+			@media all and (min-width: $large) {
 				width: 320px;
 			}
 	
-			@media all and (max-device-width: $large - 1) {
+			@media all and (max-width: $large - 1) {
 				width: 30%;
 			}
 

@@ -16,22 +16,22 @@ main > .addresses {
 				display: inline-block;
 			}
 			div:nth-child(2) {
-				@media all and (min-device-width: $large) {
+				@media all and (min-width: $large) {
 					font-size: 9pt;
 				}
 
-				@media all and (max-device-width: $large - 1) {
+				@media all and (max-width: $large - 1) {
 					font-size: 6pt;
 				}
 
 				display: inline-block;
 			}
 			div:nth-child(3) {
-				@media all and (min-device-width: $large) {
+				@media all and (min-width: $large) {
 					font-size: 9pt;
 				}
 
-				@media all and (max-device-width: $large - 1) {
+				@media all and (max-width: $large - 1) {
 					font-size: 6pt;
 				}
 			}

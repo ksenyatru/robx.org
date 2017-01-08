@@ -5,13 +5,13 @@ main > .prices {
 	@include justify-content(space-between);
 	@include flex-wrap(wrap);
 
-	@media all and (min-device-width: $large) {
+	@media all and (min-width: $large) {
 		padding-left: calc(50% -  540px);
 		padding-right: calc(50% - 540px);
 
 	}
 
-	@media all and (max-device-width: $large - 1) {
+	@media all and (max-width: $large - 1) {
 		padding-left: 2%;
 		padding-right: 2%;
 	}

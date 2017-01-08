@@ -25,12 +25,12 @@ main > .about {
 			}
 
 			.image {
-				@media all and (min-device-width: $large) {
+				@media all and (min-width: $large) {
 					width: 150px;
 					height: 150px;
 				}
 
-				@media all and (max-device-width: $large - 1) {
+				@media all and (max-width: $large - 1) {
 					width: 15vw;
 					height: 15vw;
 				}

@@ -7,13 +7,13 @@ $small: 480px;
 * {
 	font-family: 'Open Sans', sans-serif;
 
-	@media all and (min-device-width: $large) {
+	@media all and (min-width: $large) {
 		font-size: 11pt;
 	}
-	@media all and (max-device-width: $large - 1) and (min-device-width: $small) {
+	@media all and (max-width: $large - 1) and (min-width: $small) {
 		font-size: 8pt;
 	}
-	@media all and (max-device-width: $small) {
+	@media all and (max-width: $small) {
 		font-size: 12pt;
 	}
 
@@ -55,11 +55,11 @@ $small: 480px;
 
 %double-row {
 	& > * {
-		@media all and (min-device-width: $large) {
+		@media all and (min-width: $large) {
 			width: $large;
 		}
 
-		@media all and (max-device-width: $large - 1) {
+		@media all and (max-width: $large - 1) {
 			width: 96%;
 		}
 
@@ -75,11 +75,11 @@ $small: 480px;
 	padding: 0;
 	
 	& > *:first-child {
-		@media all and (min-device-width: $large) {
+		@media all and (min-width: $large) {
 			width: $large / 2 - 31px;
 		}
 
-		@media all and (max-device-width: $large - 1) {
+		@media all and (max-width: $large - 1) {
 			width: calc(48% - 31px);
 		}
 

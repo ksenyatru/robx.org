@@ -11,11 +11,11 @@ footer {
 		@include justify-content(space-around);
 		@include flex-direction(column);
 
-		@media all and (min-device-width: $large) {
+		@media all and (min-width: $large) {
 			width: 268px;
 		}
 	
-		@media all and (max-device-width: $large - 1) {
+		@media all and (max-width: $large - 1) {
 			width: calc(24% - 2px);
 		}
 
@@ -37,11 +37,11 @@ footer {
 			padding-left: 10px;
 			padding-right: 10px;
 
-			@media all and (min-device-width: $large) {
+			@media all and (min-width: $large) {
 				width: 248px;
 			}
 	
-			@media all and (max-device-width: $large - 1) {
+			@media all and (max-width: $large - 1) {
 				width: calc(24% - 22px);
 			}
 

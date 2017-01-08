@@ -17,20 +17,20 @@ main > .register {
 
 
 		.intro {
-			@media all and (min-device-width: $large) {
+			@media all and (min-width: $large) {
 				width: 570px;
 			}
 	
-			@media all and (max-device-width: $large - 1) {
+			@media all and (max-width: $large - 1) {
 				width: 52%;
 			}
 	
 			& > *:first-child {
-				@media all and (min-device-width: $large) {
+				@media all and (min-width: $large) {
 					min-height: 183px
 				}
 	
-				@media all and (max-device-width: $large - 1) {
+				@media all and (max-width: $large - 1) {
 				}
 
 				@extend %flexbox;
@@ -79,11 +79,11 @@ main > .register {
 		
 		.form {
 		
-			@media all and (min-device-width: $large) {
+			@media all and (min-width: $large) {
 				width: 440px;
 			}
 	
-			@media all and (max-device-width: $large - 1) {
+			@media all and (max-width: $large - 1) {
 				width: 40%;
 			}
 
