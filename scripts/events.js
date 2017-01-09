@@ -5,6 +5,7 @@ $(function() {
 	init_gallery();
 	init_header();
 	init_reviews();
+	init_register();
 });
 
 $( window ).on('load', function() {

@@ -119,7 +119,7 @@ main > .register {
 
 			}
 
-			.ss-required {
+			.entry.required {
 				position: relative;
 	
 				&::after {
@@ -154,7 +154,7 @@ main > .register {
 				-webkit-border-radius: 20px;
 			}
 
-			.ss-select {
+			.entry.select {
 				position: relative;
 
 				&::after {

@@ -150,7 +150,7 @@ main > .register {
 
 			}
 
-			.ss-required {
+			.entry.required {
 				position: relative;
 	
 				&::after {
@@ -170,6 +170,8 @@ main > .register {
 			}
 
 			input[type=submit] {
+				opacity: 0.5;
+
 				font-size: 17pt;
 				font-weight: bold;
 				
@@ -207,7 +209,7 @@ main > .register {
 				margin-bottom: 20px;	
 			}
 			
-			.ss-select {
+			.entry.select {
 				position: relative;
 
 				&::after {

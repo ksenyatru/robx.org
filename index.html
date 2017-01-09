@@ -74,6 +74,8 @@
 		<script src="scripts/addresses.js"></script>
 		<script src="scripts/videos.js"></script>
 		<script src="scripts/reviews.js"></script>
+		<script src="scripts/register.js"></script>
+
 		<script src="scripts/events.js"></script>
 
 		<script src="scripts/map.js"></script>
@@ -172,67 +174,38 @@
 						</div>
 					</div>
 					<div class = "form">
-						<script type="text/javascript">var submitted=false;</script>
-							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.form').addClass('sent');}"></iframe>
-
-								<form action="http://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted = true; yaCounter39897755.reachGoal('ORDER');">
-									<div class="ss-form-question errorbox-good" role="listitem">
-										<div dir="auto" class="ss-item  ss-text ss-required">
-											<div class="ss-form-entry">
-												<input type="text" name="entry.598421956" placeholder="ФИО Родителя" class="ss-q-short" id="entry_598421956" dir="auto" aria-label="ФИО Родителя" required="">
-											</div>
-										</div>
-									</div>
-		<div class="ss-form-question errorbox-good" role="listitem">
-			<div dir="auto" class="ss-item  ss-text">
-				<div class="ss-form-entry">
-					<input type="text" name="entry.2103816587" placeholder="Возраст ребенка" class="ss-q-short" id="entry_2103816587" dir="auto" aria-label="Возраст ребенка  " title="">
-				</div>
-			</div>
-		</div>
-		<div class="ss-form-question errorbox-good" role="listitem">
-          		<div dir="auto" class="ss-item  ss-text ss-required">
-				<div class="ss-form-entry">
-					<input type="text" name="entry.706895143" placeholder="Контактный телефон" class="ss-q-short" id="entry_706895143" dir="auto" aria-label="Контактный телефон" required="">
-				</div>
-			</div>
-		</div>
-		<div class="ss-form-question errorbox-good" role="listitem">
-			<div dir="auto" class="ss-item  ss-select ">
-				<div class="ss-form-entry">
-					<select name="entry.30508999" id="entry_30508999" aria-label="Дата занятия">
-						<option selected="" disabled="">Дата занятия</option>
-						<option value="12/01">12/01 (только Ленинский пр., д.151 и Гражданский пр., д. 111) </option>
-						<option value="13/01">13/01 (только Ленинский пр., д.151 и Гражданский пр., д. 111)</option>
-						<option value="14/01">14/01 (кроме Гражданский пр., д. 111)</option>
-						<option value="15/01">15/01 (кроме Гражданский пр., д. 111)</option>
-					
-					</select>
-				</div>
-			</div>
-		</div>
-		<div class="ss-form-question errorbox-good" role="listitem">
-			<div dir="auto" class="ss-item  ss-select">
-				<div class="ss-form-entry">
-					<select name="entry.1552661339" id="entry_1552661339" aria-label="Адрес класса  ">
-						<option disabled="" selected="">Адрес класса</option>
-						<option value="Выборгское ш., д. 156">Выборгское ш., д. 156 (ст. м. Проспект Просвещения.)</option>
-						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская </option>
-						<option value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
-						<option value="Гражданский пр., д.111">Гражданский пр., д.111 (ст. м. Гражданский проспект)</option>
-						<option value="Заневский пр., д.53, к.2">Заневский пр., д.53, к.2 (ст. м. Новочеркасская)</option>
-					</select>
-				</div>
-			</div>
-		</div>
-		<input type="hidden" name="draftResponse" value="[,,&quot;6979026500531216121&quot;]">
-		<input type="hidden" name="pageHistory" value="0">
-		<input type="hidden" name="fbzx" value="6979026500531216121">
-		<input type="submit" name="submit" value="Записаться" id="ss-submit" class="jfk-button jfk-button-action ">
-        </form>
-					<div class = 'notification'>
-						Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
-					</div>
+						<form action="https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse" target="_self" method='post'>
+							<div class = 'entry required'>
+								<input name = 'entry.598421956' type = 'text' placeholder="ФИО Родителя" required>
+							</div>
+							<input name = 'entry.2103816587' type = 'text' placeholder="Возраст ребенка">
+							<div class = 'entry required'>
+								<input name = 'entry.706895143' type = 'text'placeholder="Контактный телефон" required>
+							</div>
+							<div class = 'entry select'>
+								<select name = 'entry.30508999'>
+									<option selected="" disabled="">Дата занятия</option>
+									<option value="12/01">12/01 (только Ленинский пр., д.151 и Гражданский пр., д. 111) </option>
+									<option value="13/01">13/01 (только Ленинский пр., д.151 и Гражданский пр., д. 111)</option>
+									<option value="14/01">14/01 (кроме Гражданский пр., д. 111)</option>
+									<option value="15/01">15/01 (кроме Гражданский пр., д. 111)</option>
+								</select>
+							</div>
+							<div class = 'entry select'>
+								<select name="entry.1552661339">
+									<option disabled="" selected="">Адрес класса</option>
+									<option value="Выборгское ш., д. 156">Выборгское ш., д. 156 (ст. м. Проспект Просвещения.)</option>
+									<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская </option>
+									<option value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
+									<option value="Гражданский пр., д.111">Гражданский пр., д.111 (ст. м. Гражданский проспект)</option>
+									<option value="Заневский пр., д.53, к.2">Заневский пр., д.53, к.2 (ст. м. Новочеркасская)</option>
+								</select>
+							</div>
+							<input type='submit' value = 'записаться' disabled>
+						</form>
+						<div class = 'notification'>
+							Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
+						</div>
 					</div>
 				</div>
 				<div class = "footnote">
