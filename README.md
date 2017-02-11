@@ -1,62 +1,59 @@
 #Сайт для кружка по робототехнике robx.org
 
-Если необходимо внести изменения на сайт, вот списки шагов для наиболее стандартных действий:
+Если необходимо внести изменения в содержание сайта, нужно отредактировать файлы.
+Вот список наиболее вероятных мест для редактирования:
 
-1. Если хочется отредактировать даты следующих занятий, то
-	- Откройте файл index.html, найдите строчки похожие на 
+1. Для изменения даты нужно редактировать /main/register.php, 67 строка отвечает за отображаемые даты
 	```html
-		<div class = "next">
-			Ближайшие занятия:
 			<div>
-				27-28 Августа
+				15-19 Февраля
 			</div>
-		</div>	    
 	```
-	- Напишите подходящую дату.
-2.  Если хочется изменить даты занятий в форме, то 
-	- Откройте файл index.html, найдите строчки похожие на 
+2. Для изменения списка классов нужно редактировать /main/register.php, начиная с 105 строки идет список пунктов в выпадающем меню
 	```html
-		<option value="15/12">15/12 </option>
-		<option value="16/12">16/12 </option>
-		<option value="17/12">17/12 (только Ленинский)</option>
-		<option value="18/12">18/12</option>
+			<option disabled="" selected="">Адрес класса</option>
+			<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект.)</option>
+			<option value="Выборгское ш., д. 156">Выборгское ш., д. 156 (ст. м. Проспект Просвещения.)</option>
+			<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская </option>
+			<option value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
+			<option value="Заневский пр., д.53, к.2">Заневский пр., д.53, к.2 (ст. м. Новочеркасская)</option>
 	```
-    - Измените на то, что вам необходимо.
-
-3. Если необходимо добавить новое фото, то
-	- Откройте файл index.html, найдите строчки похожие на 
+3. Для изменения списка фотографий нужно редактировать /main/photos.php,начиная с 5 строки идут фотографии (в атрибут src прописывается путь фотографии)
 	```html
-		<div class = "galery">
-			...
-		</div>
-	```
-    - Добавьте внутрь 
-	```html
-		<img src = 'СЮДА НАДО НАПИСАТЬ ПУТЬ ДО НОВОЙ ФОТОГРАФИИ'>
+			<img src = "photos/photo1.jpg">
+			<img src = "photos/photo2.jpg">
+			<img src = "photos/photo3.jpg">
+			<img src = "photos/photo4.jpg">
+			<img src = "photos/photo5.jpg">
+			<img src = "photos/photo6.jpg">
+			<img src = "photos/photo7.jpg">
 	```
 
-4. Если необходимо добавить новый адрес, то это самое сложное, но все равно не сложно.
-	- Откройте файл index.html, найдите строчки похожие на 
-	```html
-		<div class = "addresses">
-			<div class = "list">
-				<h2>Адреса классов</h2>
-				<div class = "address">
-					<div>Медиков пр., д.5</div>
-					<div>(Ленполиграфмаш)</div>
-					<div>м. Петроградская</div>
-                </div>
-                ...
+4. Для изменения списка фотографий нужно редактировать /main/reviews.php, начиная с 4 строки идут блок с отзывами по 2 в блоке(в атрибут src прописывается путь фотографии)
+		```html
+			<div class = 'review'>
+				<img src = 'photos/comment-1.png'>
+				<img src = 'photos/comment-1-m.png'>
 			</div>
-        	...                   	
-		</div>
-	```
-    - Добавьте внутрь новый тег
-	```html
-		<div class = "address">
-			<div>АДРЕС</div>
-			<div>РАЙОН ИЛИ ОПИСАНИЕ</div>
-			<div>МЕТРО</div>
-		</div>
-	```
-    - Так вы добавили новый адрес в список, но не на карту. Для добавления на карту надо узнать широту и долготу адреса, а затем добавить их в масив locations в файле scripts/map.js
+			<div class = 'review'>
+				<img src = 'photos/comment-2.png'>
+				<img src = 'photos/comment-2-m.png'>
+			</div>
+			<div class = 'review'>
+				<img src = 'photos/comment-3.png'>
+				<img src = 'photos/comment-3-m.png'>
+			</div>
+			<div class = 'review'>
+				<img src = 'photos/comment-4.png'>
+				<img src = 'photos/comment-4-m.png'>
+			</div>
+			<div class = 'review'>
+				<img src = 'photos/comment-5.png'>
+				<img src = 'photos/comment-5-m.png'>
+			</div>
+			<div class = 'review'>
+				<img src = 'photos/comment-6.png'>
+				<img src = 'photos/comment-6-m.png'>
+			</div>
+		```
+	5. Для изменения списка преподавателей нужно редактировать /main/teachers.php
