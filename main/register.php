@@ -14,7 +14,8 @@ if (!empty($_POST)) {
 				'entry_706895143' => $_POST['phone'],
                         	'entry_30508999' => $_POST['date'],
 				'entry_1552661339' => $_POST['address'],
-				'entry_2103816587' => date_diff(date_create_from_format('Y-n-j', $_POST['birthday']), date_create())->y . ''
+				'entry_2103816587' => date_diff(date_create_from_format('Y-n-j', $_POST['birthday']), date_create())->y . '',
+				'entry.800485612' => $_POST['email']
 			))
 		)
 	);
