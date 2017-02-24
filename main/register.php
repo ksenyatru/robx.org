@@ -65,7 +65,7 @@ if (!empty($_POST)) {
 				<div class = "next">
 					Ближайшие занятия:
 					<div>
-						23-26 Февраля
+						01-05 Марта
 					</div>
 				</div>
 				<div class = "free">
