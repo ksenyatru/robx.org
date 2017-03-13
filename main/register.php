@@ -101,8 +101,6 @@ if (!empty($_POST)) {
 						<option disabled="" selected="">Адрес класса</option>
 						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект)</option>
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
-						<option value="Трамвайный пр., д. 20">Трамвайный пр., д. 20 (ст. м. Ленинский проспект) </option>
-						
 					</select>
 				</div>
 				<input type='submit' value = 'записаться' disabled>
