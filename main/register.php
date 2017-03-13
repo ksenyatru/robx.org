@@ -94,7 +94,7 @@ if (!empty($_POST)) {
 					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
 				</div>
 				<div class = 'entry required'>
-					<input name = 'email' type = 'text'placeholder="Email адрес" pattern='.+@.+' required>
+					<input name='email' type='email' placeholder="Email адрес" required>
 				</div>
 				<div class = 'entry select'>
 					<select name='address'>
