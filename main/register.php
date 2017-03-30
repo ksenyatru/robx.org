@@ -71,8 +71,6 @@ if (!empty($_POST)) {
 				<div class = "free">
 					Запись на занятия временно приостановлена 
 					<div>
-					 
-				</div>
 				<div class = "rest">
 					До занятия осталось:
 					<div>
