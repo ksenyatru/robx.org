@@ -168,11 +168,9 @@ main>.register .content .form.sent>.notification {
     height: 100%;
     padding: 5%
 }
-main>.register .content .form span,
-main>.register .content .form .site{
+main>.register .content .form span {
     display: none
 }
-
 main>.register .content .form input[type=text],
 main>.register .content .form input[type=date],
 main>.register .content .form input[type=email]{

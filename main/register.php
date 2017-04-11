@@ -2,7 +2,6 @@
 
 <?php
 
-
 if (!empty($_POST)) {
 	$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
 
@@ -22,7 +21,7 @@ if (!empty($_POST)) {
 	);
 	$context  = stream_context_create($options);
 	$result = file_get_contents($url, false, $context);
-	if ($result === FALSE) {
+	if ($result === FALSE) { 
 		var_dump(http_response_code(500));
 	}
 
@@ -41,13 +40,13 @@ if (!empty($_POST)) {
 		);
 
 	if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
-		$data['filial'] = array(_POST['address']);
+		$data['filial'] = array(
+                                $_POST['address']
+                        );
 	}
 
 	$resultAccount = senderToTallanto('Contact',$data);
-
 }
-
 ?>
 
 
@@ -70,7 +69,7 @@ if (!empty($_POST)) {
 					</div>
 				</div>
 				<div class = "free">
-
+				
 					<div>
 					 Запись на занятия временно приостановлена
 					</div>
@@ -92,21 +91,17 @@ if (!empty($_POST)) {
 					<input name = 'birthday' type = 'text' placeholder="Дата рождения ребенка">
 				</div>
 				<div class = 'entry required mobile-phone'>
-					<input name = 'phone' type = 'text' placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
+					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
 				</div>
 				<div class = 'entry required'>
 					<input name='email' type='email' placeholder="Email адрес" required>
 				</div>
-
 				<div class = 'entry select'>
 					<select name='address'>
 						<option disabled="" selected="">Адрес класса</option>
 						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект)</option>
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
-				</div>
-				<div class = 'entry site'>
-					<input name = 'url' type='url' placeholder="Site">
 				</div>
 				<input type='submit' value = 'записаться' disabled>
 			</form>

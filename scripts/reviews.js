@@ -30,7 +30,7 @@ function add_elements_computer_reviews() {
 	$('.reviews .list a.left').click(function() {
 		$('.reviews .list div.current').removeClass('current').prev().prev().addClass('current');
 		$('.reviews .list div').css('left', "-" + $('.reviews .list > div.current').prevAll().length + "00%");
-
+	
 		if($('.reviews .list > div.current').prevAll('div').length < 2) {
 			$('.reviews .list a.left').hide();
 		}
@@ -53,32 +53,32 @@ function remove_elements_phone_reviews() {
 
 function init_reviews() {
 	if(window.matchMedia('(max-width: 480px)').matches) {
-	//	$('.reviews').get(0).mobile = true;
+		$('.reviews').get(0).mobile = true;
 		add_elements_phone_reviews();
 		init_computer_slider('.reviews .list');
 	} else {
-	//	$('.reviews').get(0).mobile = false;
+		$('.reviews').get(0).mobile = false;
 		add_elements_computer_reviews();
 	}
 }
 
 function resize_reviews() {
-	// if(window.matchMedia('(max-width: 480px)').matches) {
-	// 	if($('.reviews').get(0).mobile == false) {
-	// 		$('.reviews').get(0).mobile = true;
-	// 		remove_elements_computer_reviews();
-	// 		add_elements_phone_reviews();
-	// 		init_computer_slider('.reviews .list');
-	// 	} else if($('.reviews').get(0).mobile == true) {
-	// 		update_computer_slider('.reviews .list');
-	// 	}
-	// } else {
-	// 	if($('.reviews').get(0).mobile == true) {
-	// 		$('.reviews').get(0).mobile = false;
-	// 		remove_elements_phone_reviews();
-	// 		delete_slider('.reviews .list');
-	// 		add_elements_computer_reviews();
-	// 	}
-	// }
+	if(window.matchMedia('(max-width: 480px)').matches) {
+		if($('.reviews').get(0).mobile == false) { 
+			$('.reviews').get(0).mobile = true;
+			remove_elements_computer_reviews();
+			add_elements_phone_reviews();
+			init_computer_slider('.reviews .list');
+		} else if($('.reviews').get(0).mobile == true) {
+			update_computer_slider('.reviews .list');
+		}
+	} else {
+		if($('.reviews').get(0).mobile == true) { 
+			$('.reviews').get(0).mobile = false;
+			remove_elements_phone_reviews();
+			delete_slider('.reviews .list');
+			add_elements_computer_reviews();
+		}
+	}
 
 }

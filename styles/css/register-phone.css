@@ -82,8 +82,7 @@ main>.register .content .form {
     margin-right: auto;
     padding-top: 50px
 }
-main>.register .content .form span,
-main>.register .content .form .site{
+main>.register .content .form span {
     display: none
 }
 main>.register .content .form .notification {
