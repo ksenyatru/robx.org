@@ -49,22 +49,22 @@ function init_videos() {
 }
 
 function resize_videos() {
-	if(window.matchMedia('(max-width: 480px)').matches) {
-	//	if($('.videos').get(0).mobile == false) {
-	//		$('.videos').get(0).mobile = true;
-			remove_elements_computer_videos();
-			add_elements_phone_videos();
-			init_computer_slider('.videos .names');
-		} else if($('.videos').get(0).mobile == true) {
-			update_computer_slider('.videos .names');
-		}
-	} else {
-	//	if($('.videos').get(0).mobile == true) {
-	//		$('.videos').get(0).mobile = false;
-			remove_elements_phone_videos();
-			delete_slider('.videos .names');
-			add_elements_computer_videos();
-	//	}
-	}
+	// if(window.matchMedia('(max-width: 480px)').matches) {
+	// //	if($('.videos').get(0).mobile == false) {
+	// //		$('.videos').get(0).mobile = true;
+	// 		remove_elements_computer_videos();
+	// 		add_elements_phone_videos();
+	// 		init_computer_slider('.videos .names');
+	// 	} else if($('.videos').get(0).mobile == true) {
+	// 		update_computer_slider('.videos .names');
+	// 	}
+	// } else {
+	// //	if($('.videos').get(0).mobile == true) {
+	// //		$('.videos').get(0).mobile = false;
+	// 		remove_elements_phone_videos();
+	// 		delete_slider('.videos .names');
+	// 		add_elements_computer_videos();
+	// //	}
+	// }
 
 }
