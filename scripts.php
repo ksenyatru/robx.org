@@ -1,4 +1,4 @@
-<script src="http://code.jquery.com/jquery.js"></script>
+<script src="scripts/jquery.js"></script>
 <script src="scripts/maskedinput.js" type="text/javascript"></script>
 <script src="scripts/slider.js"></script>
 <script src="scripts/header.js"></script>
