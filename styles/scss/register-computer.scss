@@ -20,16 +20,16 @@ main > .register {
 			@media all and (min-width: $large) {
 				width: 570px;
 			}
-	
+
 			@media all and (max-width: $large - 1) {
 				width: 52%;
 			}
-	
+
 			& > *:first-child {
 				@media all and (min-width: $large) {
 					min-height: 183px
 				}
-	
+
 				@media all and (max-width: $large - 1) {
 				}
 
@@ -54,7 +54,7 @@ main > .register {
 			.information {
 				@extend %flexbox;
 				@include justify-content(space-between);
-				
+
 				& > div {
 					width: 32%;
 
@@ -64,7 +64,7 @@ main > .register {
 
 					div {
 						display: inline-block;
-			
+
 						font-weight: bold;
 
 						border-radius: 20px;
@@ -76,13 +76,15 @@ main > .register {
 				}
 			}
 		}
-		
+
 		.form {
-		
+			.site{
+				display: none;
+			}
 			@media all and (min-width: $large) {
 				width: 440px;
 			}
-	
+
 			@media all and (max-width: $large - 1) {
 				width: 40%;
 			}
@@ -106,11 +108,11 @@ main > .register {
 				box-sizing: border-box;
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
-			
+
 				width: 100%;
 				height: 100%;
 				padding: 5%;
-			} 
+			}
 
 			span {
 				display: none;
@@ -118,7 +120,7 @@ main > .register {
 
 			input[type=text], input[type=date], input[type=email] {
 				width: 100%;
-				
+
 				background-color: $blue;
 				color: white;
 
@@ -152,7 +154,7 @@ main > .register {
 
 			.entry.required {
 				position: relative;
-	
+
 				&::after {
 					display: block;
 					content: "●";
@@ -174,7 +176,7 @@ main > .register {
 
 				font-size: 17pt;
 				font-weight: bold;
-				
+
 				background-color: $red;
 				color: white;
 
@@ -190,7 +192,7 @@ main > .register {
 
 			select {
 				width: 100%;
-			
+
 				background-color: $blue;
 				color: white;
 
@@ -206,9 +208,9 @@ main > .register {
 				padding-bottom: 10px;
 				padding-top: 10px;
 
-				margin-bottom: 20px;	
+				margin-bottom: 20px;
 			}
-			
+
 			.entry.select {
 				position: relative;
 
@@ -233,15 +235,15 @@ main > .register {
 		}
 	}
 
-	.footnote {	
+	.footnote {
 		font-weight: lighter;
 
 		border-top: 1px solid white;
 		padding-top: 10px;
-			
+
 		* {
 			font-size: 8pt;
-	
+
 			&:first-child {
 				width: 360px;
 			}
@@ -250,7 +252,7 @@ main > .register {
 				width: 720px;
 			}
 		}
-	}		
+	}
 
 	@extend %blue, %double-row;
 }
