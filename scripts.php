@@ -1,5 +1,5 @@
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="scripts/maskedinput.js" type="text/javascript"></script>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/maskedinput.js"></script>
 <script src="scripts/slider.js"></script>
 <script src="scripts/header.js"></script>
 <script src="scripts/time.js"></script>
@@ -30,7 +30,7 @@
 	        s.type = "text/javascript";
 	        s.async = true;
 	        s.src = "https://mc.yandex.ru/metrika/watch.js";
-	
+
 	        if (w.opera == "[object Opera]") {
 	                d.addEventListener("DOMContentLoaded", f, false);
 	        } else { f(); }
