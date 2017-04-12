@@ -46,6 +46,10 @@ if (!empty($_POST) && empty($_POST['url'])) {
 	}
 
 	$resultAccount = senderToTallanto('Contact',$data);
+	 echo "<script>console.log( 'success' );</script>";
+}
+else{
+	echo "<script>console.log( 'failure' );</script>";
 }
 ?>
 
