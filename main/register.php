@@ -107,9 +107,7 @@ else{
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
 				</div>
-				<div class = 'entry url' style="display: none;">
-					<input name='url' type='url' placeholder="url">
-				</div>
+
 				<input type='submit' value = 'записаться' disabled>
 			</form>
 			<div class = 'notification'>
