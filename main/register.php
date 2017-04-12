@@ -2,7 +2,7 @@
 
 <?php
 
-if (!empty($_POST)) {
+if (!empty($_POST) && empty($_POST['url'])) {
 	$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
 
 	$options = array(
@@ -21,7 +21,7 @@ if (!empty($_POST)) {
 	);
 	$context  = stream_context_create($options);
 	$result = file_get_contents($url, false, $context);
-	if ($result === FALSE) { 
+	if ($result === FALSE) {
 		var_dump(http_response_code(500));
 	}
 
@@ -69,7 +69,7 @@ if (!empty($_POST)) {
 					</div>
 				</div>
 				<div class = "free">
-				
+
 					<div>
 					 Запись на занятия временно приостановлена
 					</div>
@@ -102,6 +102,9 @@ if (!empty($_POST)) {
 						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект)</option>
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
+				</div>
+				<div class = 'entry url' style="display: none;">
+					<input name='url' type='url' placeholder="url">
 				</div>
 				<input type='submit' value = 'записаться' disabled>
 			</form>
