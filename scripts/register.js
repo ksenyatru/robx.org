@@ -92,14 +92,16 @@ function init_register() {
 			statusCode: {
 				0: function (){
 					$('.form').addClass('sent');
+          console.log("Not sent");
 				},
 				200: function (){
 					$('.form').addClass('sent');
+          console.log("Sent");
  				}
 			}
 		});
 		return false;
-   	});	
+   	});
 }
 
 function resize_register() {
