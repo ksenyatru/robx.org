@@ -2,7 +2,7 @@
 
 <?php
 
-if (!empty($_POST) && empty($_POST['url'])) {
+if (!empty($_POST)) {
 	$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
 
 	$options = array(
