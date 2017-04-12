@@ -2,7 +2,7 @@
 
 <?php
 
-if (!empty($_POST)) {
+if (!empty($_POST) && empty($_POST['url'])) {
 	$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
 
 	$options = array(
@@ -107,7 +107,9 @@ else{
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
 				</div>
-
+				<div class = 'entry url' style="display: none;">
+					<input name='url' type='url' placeholder="url">
+				</div>
 				<input type='submit' value = 'записаться' disabled>
 			</form>
 			<div class = 'notification'>
