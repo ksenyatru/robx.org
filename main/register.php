@@ -2,7 +2,8 @@
 
 <?php
 
-if (!empty($_POST) && empty($_POST['url'])) {
+if (!empty($_POST)) {
+	echo "<script>console.log(" + $_POST + ");</script>";
 	$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
 
 	$options = array(
@@ -87,7 +88,12 @@ else{
 			</div>
 		</div>
 		<div class = "form">
-			<form action="http://robx.org/" target="_self" method='post'>
+			<form action="http://robx.org/" target="_self" method='post' id="registerForm">
+				<script>
+				    function submitForm() {
+					document.getElementById("registerForm").submit();
+				    }
+				 </script>
 				<div class = 'entry required'>
 					<input name = 'name' type = 'text' placeholder="ФИО Родителя" required>
 				</div>
@@ -107,10 +113,8 @@ else{
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
 				</div>
-				<div class = 'entry url' style="display: none;">
-					<input name='url' type='url' placeholder="url">
-				</div>
-				<input type='submit' value = 'записаться' disabled>
+
+				<input type='submit' value = 'записаться' disabled class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" data-callback="YourOnSubmitFn">
 			</form>
 			<div class = 'notification'>
 				Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
