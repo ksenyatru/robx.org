@@ -2,8 +2,16 @@
 
 <?php
 
-if (!empty($_POST)) {
-	echo "<script>console.log(" + $_POST + ");</script>";
+if($_SERVER["REQUEST_METHOD"] === "POST") {
+
+
+$google_recaptcha_secret = "";
+$api_response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$google_recaptcha_secret."&response=".$_POST['g-recaptcha-response']); 
+
+$api_response = json_decode($api_response, true); 
+
+
+if (!empty($_POST && $api_response["success"] === true)) {
 	$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
 
 	$options = array(
@@ -41,16 +49,15 @@ if (!empty($_POST)) {
 		);
 
 	if(array_key_exists('address', $_POST) && $_POST['address'] !== '') {
-		$data['filial'] = array(
-                                $_POST['address']
-                        );
+		$data['filial'] = array($_POST['address']);
 	}
 
 	$resultAccount = senderToTallanto('Contact',$data);
-	 echo "<script>console.log( 'success' );</script>";
+	 echo "<script>console.log('POST', " .  $api_response["success"]  .   " );</script>";
 }
 else{
 	echo "<script>console.log( 'failure' );</script>";
+}
 }
 ?>
 
@@ -75,9 +82,6 @@ else{
 				</div>
 				<div class = "free">
 
-					<div>
-					 Запись на занятия временно приостановлена
-					</div>
 				</div>
 				<div class = "rest">
 					До занятия осталось:
@@ -88,12 +92,7 @@ else{
 			</div>
 		</div>
 		<div class = "form">
-			<form action="http://robx.org/" target="_self" method='post' id="registerForm">
-				<script>
-				    function submitForm() {
-					document.getElementById("registerForm").submit();
-				    }
-				 </script>
+			<form action="http://robx.org/" target="_self" method='post'>
 				<div class = 'entry required'>
 					<input name = 'name' type = 'text' placeholder="ФИО Родителя" required>
 				</div>
@@ -113,8 +112,8 @@ else{
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
 				</div>
-
-				<input type='submit' value = 'записаться' disabled class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" data-callback="YourOnSubmitFn">
+        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE"></div>
+				<input type='submit' name='submit' class='submit'  value = 'записаться' disabled>
 			</form>
 			<div class = 'notification'>
 				Спасибо, что оставили заявку, с Вами свяжется наш сотрудник накануне занятия для подтверждения времени.
