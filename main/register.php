@@ -112,7 +112,7 @@ else{
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
 				</div>
-        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" data-size="invisible"></div>
+        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE"></div>
 				<input type='submit' name='submit' class='submit'  value = 'записаться' disabled>
 			</form>
 			<div class = 'notification'>
