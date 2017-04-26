@@ -5,10 +5,10 @@
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
-$google_recaptcha_secret = "";
-$api_response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$google_recaptcha_secret."&response=".$_POST['g-recaptcha-response']); 
+$google_recaptcha_secret = getenv('RECAPTCHA');
+$api_response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$google_recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 
-$api_response = json_decode($api_response, true); 
+$api_response = json_decode($api_response, true);
 
 
 if (!empty($_POST && $api_response["success"] === true)) {
@@ -112,7 +112,7 @@ else{
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
 				</div>
-        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE"></div>
+        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE" data-size="invisible"></div>
 				<input type='submit' name='submit' class='submit'  value = 'записаться' disabled>
 			</form>
 			<div class = 'notification'>

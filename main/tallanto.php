@@ -4,7 +4,7 @@ function senderToTallanto($module, $params)
 {
 	$crm_url = 'http://robx.tallanto.ru';
 	$url = $crm_url . '/index.php?entryPoint=dataCapture&module=' . $module;
-	$key = ''; //ваш сгенерированный ключ для подписи(его изменять не надо)
+	$key = getenv('TALLANTO'); //ваш сгенерированный ключ для подписи(его изменять не надо)
 	uksort($params, "strcasecmp");
 	$values = "";
 	foreach($params as $name => $value) {
