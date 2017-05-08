@@ -17,33 +17,8 @@ main > .register {
 			margin-left: auto;
 			margin-right: auto;
 			
-			& > div:first-child  > div {
-				text-align: center;
-				font-size: 20pt;
-			}
-
-			.information {
-				border-top: 2px solid white;
-				margin-top: 30px;
-				padding-top: 30px;
-				width: 100%;
-				margin-left: auto;
-				margin-right: auto;
-
-				& > div {
-					@extend %flexbox;
-					@include justify-content(space-between);
-					padding-bottom: 10px;
-
-					& > div {
-						text-align: right;				
-					}
-				}
-			}
-
-			& > div > img {
-				display: none;
-			}
+			text-align: center;
+			font-size: 20pt;
 		}
 		
 		.form {

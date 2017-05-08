@@ -9,7 +9,6 @@
 	</div>
 
 	<?php include("main/teachers.php"); ?>
-	<?php include("main/prices.php"); ?>
 
 	<div class = 'inter'>
 		<div>Запишитесь на первое бесплатное занятие</div>
