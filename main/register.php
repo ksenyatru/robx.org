@@ -66,53 +66,21 @@ else{
 <div class = "register">
 	<div class = "content">
 		<div class = "intro">
-			<div>
-				<img src = "icons/arrows.png">
-				<div>
-					Запишите ребенка
-					на первое бесплатное занятие в Кружке Робототехники!
-				</div>
-			</div>
-			<div class = "information">
-				<div class = "next">
-					Ближайшие занятия:
-					<div>
-						август 2017
-					</div>
-				</div>
-				<div class = "free">
-
-				</div>
-				<div class = "rest">
-					До занятия осталось:
-					<div>
-						-
-					</div>
-				</div>
-			</div>
+			Запишите ребенка
+			на бесплатное подготовительное занятие к летнему робо-лагерю «РОБИКС»
 		</div>
 		<div class = "form">
 			<form action="http://robx.org/" target="_self" method='post'>
 				<div class = 'entry required'>
 					<input name = 'name' type = 'text' placeholder="ФИО Родителя" required>
 				</div>
-				<div class = 'entry date'>
-					<input name = 'birthday' type = 'text' placeholder="Дата рождения ребенка">
-				</div>
 				<div class = 'entry required mobile-phone'>
 					<input name = 'phone' type = 'text'placeholder="Контактный телефон" pattern='\+7 \([0-9]{3}\) [0-9]{7}' required>
 				</div>
-				<div class = 'entry required'>
-					<input name='email' type='email' placeholder="Email адрес" required>
+				<div class = 'entry date'>
+					<input name = 'birthday' type = 'text' placeholder="Дата рождения ребенка">
 				</div>
-				<div class = 'entry select'>
-					<select name='address'>
-						<option disabled="" selected="">Адрес класса</option>
-						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект)</option>
-						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
-					</select>
-				</div>
-        <div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE"></div>
+				<div class="g-recaptcha" data-sitekey="6LdXMB0UAAAAAMM0MEAPJwJsCKYyqTUJnUT_aFuE"></div>
 				<input type='submit' name='submit' class='submit'  value = 'записаться' disabled>
 			</form>
 			<div class = 'notification'>
