@@ -6,6 +6,7 @@ $(function() {
 	init_header();
 	init_reviews();
 	init_register();
+	init_camp();
 });
 
 $( window ).on('load', function() {
@@ -15,6 +16,7 @@ $( window ).on('load', function() {
 	resize_gallery();
 	resize_header();	
 	resize_reviews();	
+	resize_camp();
 
 });
 
@@ -25,4 +27,5 @@ $( window ).resize(function() {
 	resize_gallery();
 	resize_header();	
 	resize_reviews();	
+	resize_camp();
 });

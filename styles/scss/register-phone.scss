@@ -1,6 +1,28 @@
 @import 'phone-common.scss';
 
 main > .register {
+	background-color: rgba(0, 0, 255, 0.7);
+	color: white;
+
+	position: relative;
+
+	&:after {
+		content: '';
+
+		z-index: -50;
+
+		background-image: url(../../photos/main-photo.png);
+
+		position: absolute;
+		top: 0;
+	        left: 0;
+		bottom: 0;
+		right: 0;
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
 
 	.footnote {
 		display: none;
@@ -57,11 +79,16 @@ main > .register {
 				padding: 5%;
 			} 
 
+			form {
+				@extend %flexbox;
+				@include flex-direction(column);
+			}
 
-			input[type=text],input[type=email] {
+
+			input[type=text], input[type=email] {
 				width: 100%;
 				
-				background-color: $blue;
+				background-color: rgba(0,0,0,0);
 				color: white;
 
 				border: 0;
@@ -120,6 +147,7 @@ main > .register {
 				border: 0;
 				border-radius: 20px;
 
+				margin-top: 20px;
 				margin-left: auto;
 				margin-right: auto;
 				padding: 10px 12px;
@@ -127,6 +155,11 @@ main > .register {
 
 				-webkit-appearance: none;
 				-webkit-border-radius: 20px;
+			}
+
+			.g-recaptcha {
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			.entry.select {
@@ -174,5 +207,5 @@ main > .register {
 		}
 	}
 
-	@extend %row, %blue;
+	@extend %row;
 }
