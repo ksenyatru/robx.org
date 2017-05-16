@@ -13,9 +13,6 @@
 		<a href = "#videos">Проекты</a>
 	</div>
 	<div>
-		<a href = '#prices'>Стоимость</a>
-	</div>
-	<div>
 		<a href = "#photos">Фото</a>
 	</div>
 	<div>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 159.7 133" style="enable-background:new 0 0 159.7 133;" xml:space="preserve">
+	 viewBox="0 0 102 102" style="enable-background:new 0 0 102 102;" xml:space="preserve">
 <style type="text/css">
 	.st0{opacity:0.75;fill:#4667FF;}
 	.st1{fill:#FFD92E;}
@@ -34,11 +34,14 @@
 	.st28{fill:#4F5252;stroke:#4F5252;stroke-width:2;stroke-miterlimit:10;}
 	.st29{fill:none;stroke:#4667FF;stroke-width:2;stroke-miterlimit:10;}
 	.st30{fill:#FFD92E;stroke:#4667FF;stroke-width:2;stroke-miterlimit:10;}
-	.st31{fill:#4667FF;stroke:#4667FF;stroke-width:0.5;stroke-miterlimit:10;}
-	.st32{fill:#4667FF;stroke:#4667FF;stroke-width:0.25;stroke-miterlimit:10;}
-	.st33{fill:none;stroke:#FFFFFF;stroke-width:2.329;stroke-linecap:round;stroke-miterlimit:10;}
-	.st34{fill:#19191A;stroke:#19191A;stroke-miterlimit:10;}
-	.st35{fill:none;stroke:#19191A;stroke-miterlimit:10;}
+	.st31{font-family:'OpenSans-Semibold';}
+	.st32{font-size:20.4985px;}
+	.st33{font-size:16.4393px;}
+	.st34{fill:#4667FF;stroke:#4667FF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st35{fill:#4667FF;stroke:#4667FF;stroke-width:0.25;stroke-miterlimit:10;}
+	.st36{fill:none;stroke:#FFFFFF;stroke-width:2.329;stroke-linecap:round;stroke-miterlimit:10;}
+	.st37{fill:#19191A;stroke:#19191A;stroke-miterlimit:10;}
+	.st38{fill:none;stroke:#19191A;stroke-miterlimit:10;}
 </style>
 <g id="Layer_4">
 </g>
@@ -46,16 +49,24 @@
 	<g>
 		<g>
 			<g>
+				<circle class="st29" cx="51.5" cy="50.8" r="47.7"/>
+			</g>
+			<g>
 				<g>
-					<path class="st13" d="M49.4,20.6c14.9,0,26.9,12.1,26.9,26.9S64.3,74.5,49.4,74.5"/>
-					<path class="st13" d="M49.4,74.5c-14.9,0-26.9-12.1-26.9-26.9s12.1-26.9,26.9-26.9"/>
-					<g class="st14">
-						<path class="st15" d="M107.7,115.5c-14.9,0-26.9-12.1-26.9-26.9s12.1-26.9,26.9-26.9"/>
-						<line class="st15" x1="95.4" y1="88.8" x2="119.9" y2="88.8"/>
+					<ellipse class="st29" cx="42.9" cy="42.9" rx="21.8" ry="18.5"/>
+					<polyline class="st29" points="29.7,57.6 29.7,67.1 38.2,60.9 					"/>
+				</g>
+				<text transform="matrix(1 0 0 1 38.1634 50.0147)" class="st2 st31 st32">?</text>
+				<g>
+					<g>
+						<ellipse class="st1" cx="62.4" cy="57.7" rx="17.5" ry="14.8"/>
+						<polyline class="st1" points="73,69.5 73,77.1 66.2,72.2 						"/>
 					</g>
-					<line class="st13" x1="37.1" y1="47.8" x2="61.7" y2="47.8"/>
-					<line class="st13" x1="49.4" y1="35.5" x2="49.4" y2="60.1"/>
-					<path class="st13" d="M107.7,61.6c14.9,0,26.9,12.1,26.9,26.9s-12.1,26.9-26.9,26.9"/>
+					<g>
+						<ellipse class="st29" cx="62.4" cy="57.7" rx="17.5" ry="14.8"/>
+						<polyline class="st29" points="73,69.5 73,77.1 66.2,72.2 						"/>
+					</g>
+					<text transform="matrix(-1 0 0 1 64.743 63.4122)" class="st2 st31 st33">!</text>
 				</g>
 			</g>
 		</g>
