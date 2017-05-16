@@ -5,13 +5,13 @@
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
-//	$google_recaptcha_secret = getenv('RECAPTCHA');
-//	$api_response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$google_recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
+	$google_recaptcha_secret = getenv('RECAPTCHA');
+	$api_response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$google_recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 
-//	$api_response = json_decode($api_response, true);
+	$api_response = json_decode($api_response, true);
 
 
-//	if (!empty($_POST && $api_response["success"] === true)) {
+	if (!empty($_POST && $api_response["success"] === true)) {
 		$url = 'https://docs.google.com/forms/d/e/1FAIpQLSc72sii9QQ7n0RB_2GKgc_al5K80wzEQGRV124iXv4ErP0HEA/formResponse';
 	
 		$options = array(
@@ -53,11 +53,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 		}
 
 		$resultAccount = senderToTallanto('Contact',$data);
-//		 echo "<script>console.log('POST', " .  $api_response["success"]  .   " );</script>";
-//	}
-//	else{
-//		echo "<script>console.log( 'failure' );</script>";
-//	}
+		 echo "<script>console.log('POST', " .  $api_response["success"]  .   " );</script>";
+	}
+	else{
+		echo "<script>console.log( 'failure' );</script>";
+	}
 }
 ?>
 
