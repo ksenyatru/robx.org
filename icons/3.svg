@@ -1,66 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 159.7 133" style="enable-background:new 0 0 159.7 133;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.75;fill:#4667FF;}
-	.st1{fill:#FFD92E;}
-	.st2{fill:#4667FF;}
-	.st3{fill:#FFFFFF;}
-	.st4{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:#4F5252;stroke-width:3;stroke-miterlimit:10;}
-	.st7{fill:#4F5252;}
-	.st8{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st9{fill:#F15A29;}
-	.st10{fill:#19191A;}
-	.st11{fill:none;stroke:#DDDDDC;stroke-miterlimit:10;}
-	.st12{fill:#DDDDDC;}
 	.st13{opacity:0.6;fill:none;stroke:#FFFFFF;stroke-width:11.8792;stroke-linecap:round;stroke-miterlimit:10;}
-	.st14{opacity:0.6;}
-	.st15{fill:none;stroke:#FFFFFF;stroke-width:11.8792;stroke-linecap:round;stroke-miterlimit:10;}
-	.st16{fill:#EFF0F1;}
-	.st17{fill:#939291;}
-	.st18{fill:none;stroke:#4667FF;stroke-width:15.8215;stroke-linecap:round;stroke-miterlimit:10;}
-	.st19{fill:none;stroke:#F15A29;stroke-width:15.8215;stroke-linecap:round;stroke-miterlimit:10;}
-	.st20{fill:none;stroke:#F15A29;stroke-width:5.815;stroke-linecap:round;stroke-miterlimit:10;}
-	.st21{fill:none;stroke:#4667FF;stroke-width:5.815;stroke-linecap:round;stroke-miterlimit:10;}
-	.st22{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:1.4957;stroke-miterlimit:10;}
-	.st23{opacity:0.76;fill:#FFFFFF;}
-	.st24{fill:none;stroke:#4667FF;stroke-width:3;stroke-miterlimit:10;}
-	.st25{clip-path:url(#SVGID_20_);}
-	.st26{clip-path:url(#SVGID_22_);}
-	.st27{opacity:0.6;fill:#FFFFFF;}
-	.st28{fill:#4F5252;stroke:#4F5252;stroke-width:2;stroke-miterlimit:10;}
-	.st29{fill:none;stroke:#4667FF;stroke-width:2;stroke-miterlimit:10;}
-	.st30{fill:#FFD92E;stroke:#4667FF;stroke-width:2;stroke-miterlimit:10;}
-	.st31{fill:#4667FF;stroke:#4667FF;stroke-width:0.5;stroke-miterlimit:10;}
-	.st32{fill:#4667FF;stroke:#4667FF;stroke-width:0.25;stroke-miterlimit:10;}
-	.st33{fill:none;stroke:#FFFFFF;stroke-width:2.329;stroke-linecap:round;stroke-miterlimit:10;}
-	.st34{fill:#19191A;stroke:#19191A;stroke-miterlimit:10;}
-	.st35{fill:none;stroke:#19191A;stroke-miterlimit:10;}
 </style>
-<g id="Layer_4">
-</g>
-<g id="Layer_3">
+
 	<g>
-		<g>
-			<g>
-				<g>
-					<line class="st13" x1="79.8" y1="74.5" x2="79.8" y2="99.7"/>
-					<line class="st13" x1="28.4" y1="114.2" x2="131.1" y2="114.2"/>
-					<line class="st13" x1="96.3" y1="96.4" x2="104.8" y2="87.9"/>
-					<line class="st13" x1="59.2" y1="96" x2="61.9" y2="97.9"/>
-					<line class="st13" x1="73.4" y1="74.5" x2="86.1" y2="74.5"/>
-					<line class="st13" x1="86.1" y1="74.5" x2="92.9" y2="38.5"/>
-					<line class="st13" x1="73.4" y1="74.5" x2="66.6" y2="38.5"/>
-					<line class="st13" x1="48.1" y1="21.9" x2="111.4" y2="21.9"/>
-					<line class="st13" x1="59.9" y1="38.5" x2="59.9" y2="21.9"/>
-					<line class="st13" x1="99.6" y1="38.5" x2="99.6" y2="21.9"/>
-					<line class="st13" x1="59.9" y1="38.5" x2="99.6" y2="38.5"/>
-				</g>
-			</g>
-		</g>
+		<line class="st13" x1="79.8" y1="74.5" x2="79.8" y2="99.7"/>
+		<line class="st13" x1="28.4" y1="114.2" x2="131.1" y2="114.2"/>
+		<line class="st13" x1="96.3" y1="96.4" x2="104.8" y2="87.9"/>
+		<line class="st13" x1="59.2" y1="96" x2="61.9" y2="97.9"/>
+		<line class="st13" x1="73.4" y1="74.5" x2="86.1" y2="74.5"/>
+		<line class="st13" x1="86.1" y1="74.5" x2="92.9" y2="38.5"/>
+		<line class="st13" x1="73.4" y1="74.5" x2="66.6" y2="38.5"/>
+		<line class="st13" x1="48.1" y1="21.9" x2="111.4" y2="21.9"/>
+		<line class="st13" x1="59.9" y1="38.5" x2="59.9" y2="21.9"/>
+		<line class="st13" x1="99.6" y1="38.5" x2="99.6" y2="21.9"/>
+		<line class="st13" x1="59.9" y1="38.5" x2="99.6" y2="38.5"/>
 	</g>
-</g>
 </svg>
