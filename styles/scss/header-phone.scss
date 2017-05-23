@@ -89,14 +89,9 @@ header {
 
 		& > .register {
 			border: 0;
-
 			width: 100% !important;
 
 			background-color: $red;
-		}
-
-		& > .phone {
-			width: 100% !important;
 		}
 
 		& > *:nth-child(n + 4) {

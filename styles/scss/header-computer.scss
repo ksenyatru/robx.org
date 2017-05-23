@@ -93,21 +93,14 @@ header {
 
 	.register {
 		@media all and (min-width: $large) {
-			width: 3 * $large / 12  - 2;
+			width: 2 * $large / 12  - 2;
 		}
 
 		@media all and (max-width: $large - 1) {
-			width: calc(24% - 2px);
+			width: calc(16% - 2px);
 		}
-		
-		background-color: $yellow;
-		color: $black;
 
-		& * {
-			border-color: $black !important;
-			color: $black;
-			background-color: $yellow;
-		}
+		background-color: $red;
 	}
 
 	.circled {

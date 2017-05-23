@@ -19,11 +19,6 @@ function initMap() {
         lng: 30.3014
     }];
 
-    var locations2 = [{
-        lat: 60.370778,
-        lng: 29.420015
-    }];
-
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
         center: locations[0],
@@ -34,15 +29,7 @@ function initMap() {
         }
     });
 
-    var map2 = new google.maps.Map(document.getElementById('camp-map'), {
-        zoom: 10,
-        center: locations2[0],
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-            mapTypeIds: ['roadmap', 'terrain']
-        }
-    });
+
 
 
     var marker0 = new google.maps.Marker({
@@ -81,13 +68,5 @@ function initMap() {
         icon: 'icons/location-small.png',
         title: 'Класс на Ленинском проспекте'
     });
-
-    var marker6 = new google.maps.Marker({
-        position: locations2[0],
-        map: map2,
-        icon: 'icons/location-small.png',
-        title: 'ДОЛ Зеленый Город'
-    });
-
 
 }

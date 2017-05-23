@@ -22,11 +22,6 @@ $small: 480px;
 	margin: 0;
 }
 
-%yellow {
-	color: $black;
-	background-color: $yellow;
-}
-
 %gray {
 	color: $black;
 	background-color: $gray;
@@ -97,7 +92,7 @@ $small: 480px;
 	}
 
 	& > *:nth-child(2) {
-		width: calc(50% - 4px);
+		width: calc(50% - 1px);
 		@extend %flexbox;
 	}
 

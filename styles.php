@@ -23,6 +23,3 @@
 <link rel = "stylesheet" href = "styles/css/prices-phone.css" media = "all and (max-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/footer-computer.css" media = "all and (min-width: 480px)">
 <link rel = "stylesheet" href = "styles/css/footer-phone.css" media = "all and (max-width: 480px)">
-<link rel = "stylesheet" href = "styles/css/camp-computer.css" media = "all and (min-width: 480px)">
-<link rel = "stylesheet" href = "styles/css/camp-phone.css" media = "all and (max-width: 480px)">
-
