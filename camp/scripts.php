@@ -1,17 +1,17 @@
-<script src="../scripts/jquery.js"></script>
-<script src="../scripts/maskedinput.js"></script>
-<script src="../scripts/slider.js"></script>
-<script src="../scripts/header.js"></script>
-<script src="../scripts/time.js"></script>
-<script src="../scripts/teachers.js"></script>
-<script src="../scripts/gallery.js"></script>
-<script src="../scripts/addresses.js"></script>
-<script src="../scripts/videos.js"></script>
-<script src="../scripts/reviews.js"></script>
-<script src="../scripts/register.js"></script>
-<script src="../scripts/events.js"></script>
-<script src="../scripts/map.js"></script>
-<script src="../scripts/camp.js"></script>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/maskedinput.js"></script>
+<script src="scripts/slider.js"></script>
+<script src="scripts/header.js"></script>
+<script src="scripts/time.js"></script>
+<script src="scripts/teachers.js"></script>
+<script src="scripts/gallery.js"></script>
+<script src="scripts/addresses.js"></script>
+<script src="scripts/videos.js"></script>
+<script src="scripts/reviews.js"></script>
+<script src="scripts/register.js"></script>
+<script src="scripts/events.js"></script>
+<script src="scripts/map.js"></script>
+<script src="scripts/camp.js"></script>
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script>
