@@ -109,6 +109,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 				<div class = 'entry select'>
 					<select name='address'>
 						<option disabled="" selected="">Адрес класса</option>
+						<option value="Пр. Медиков, д. 5">Пр. Медиков, д. 5 (ст. м. Петроградская)</option>
 						<option value="Гражданский пр., д. 111">Гражданский пр., д. 111 (ст. м. Гражданский проспект)</option>
 						<option value="Ленинский пр., д. 151">Ленинский пр., д. 151 (ст. м. Московская) </option>
 					</select>
